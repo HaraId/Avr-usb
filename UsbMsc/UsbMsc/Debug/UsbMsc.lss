@@ -1,0 +1,3570 @@
+
+UsbMsc.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000234  00800100  0000136e  00001402  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000136e  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000015  00800334  00800334  00001636  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00001636  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00001668  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000001d8  00000000  00000000  000016a8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00004fb8  00000000  00000000  00001880  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00001516  00000000  00000000  00006838  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00001720  00000000  00000000  00007d4e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000578  00000000  00000000  00009470  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00001155  00000000  00000000  000099e8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00001f70  00000000  00000000  0000ab3d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000258  00000000  00000000  0000caad  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	0c 94 8e 00 	jmp	0x11c	; 0x11c <__ctors_end>
+       4:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+       8:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+       c:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      10:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      14:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      18:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      1c:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      20:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      24:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      28:	0c 94 1c 01 	jmp	0x238	; 0x238 <__vector_10>
+      2c:	0c 94 6c 06 	jmp	0xcd8	; 0xcd8 <__vector_11>
+      30:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      34:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      38:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      3c:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      40:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      44:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      48:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      4c:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      50:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      54:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      58:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      5c:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      60:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      64:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      68:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      6c:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      70:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      74:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      78:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      7c:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      80:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      84:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      88:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      8c:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      90:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      94:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      98:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      9c:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      a0:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      a4:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      a8:	0c 94 b6 00 	jmp	0x16c	; 0x16c <__bad_interrupt>
+      ac:	c2 04       	cpc	r12, r2
+      ae:	31 06       	cpc	r3, r17
+      b0:	31 06       	cpc	r3, r17
+      b2:	08 06       	cpc	r0, r24
+      b4:	31 06       	cpc	r3, r17
+      b6:	31 06       	cpc	r3, r17
+      b8:	31 06       	cpc	r3, r17
+      ba:	31 06       	cpc	r3, r17
+      bc:	31 06       	cpc	r3, r17
+      be:	31 06       	cpc	r3, r17
+      c0:	31 06       	cpc	r3, r17
+      c2:	31 06       	cpc	r3, r17
+      c4:	31 06       	cpc	r3, r17
+      c6:	31 06       	cpc	r3, r17
+      c8:	31 06       	cpc	r3, r17
+      ca:	31 06       	cpc	r3, r17
+      cc:	31 06       	cpc	r3, r17
+      ce:	31 06       	cpc	r3, r17
+      d0:	e5 03       	fmuls	r22, r21
+      d2:	31 06       	cpc	r3, r17
+      d4:	31 06       	cpc	r3, r17
+      d6:	31 06       	cpc	r3, r17
+      d8:	31 06       	cpc	r3, r17
+      da:	31 06       	cpc	r3, r17
+      dc:	31 06       	cpc	r3, r17
+      de:	31 06       	cpc	r3, r17
+      e0:	99 04       	cpc	r9, r9
+      e2:	31 06       	cpc	r3, r17
+      e4:	31 06       	cpc	r3, r17
+      e6:	31 06       	cpc	r3, r17
+      e8:	5d 04       	cpc	r5, r13
+      ea:	31 06       	cpc	r3, r17
+      ec:	31 06       	cpc	r3, r17
+      ee:	31 06       	cpc	r3, r17
+      f0:	31 06       	cpc	r3, r17
+      f2:	70 04       	cpc	r7, r0
+      f4:	31 06       	cpc	r3, r17
+      f6:	34 04       	cpc	r3, r4
+      f8:	31 06       	cpc	r3, r17
+      fa:	31 06       	cpc	r3, r17
+      fc:	dd 04       	cpc	r13, r13
+      fe:	31 06       	cpc	r3, r17
+     100:	66 05       	cpc	r22, r6
+     102:	c0 06       	cpc	r12, r16
+     104:	ce 06       	cpc	r12, r30
+     106:	30 07       	cpc	r19, r16
+     108:	da 06       	cpc	r13, r26
+     10a:	30 07       	cpc	r19, r16
+     10c:	e6 06       	cpc	r14, r22
+     10e:	ef 06       	cpc	r14, r31
+     110:	30 07       	cpc	r19, r16
+     112:	f5 06       	cpc	r15, r21
+     114:	fa 06       	cpc	r15, r26
+
+00000116 <__ctors_start>:
+     116:	9b 07       	cpc	r25, r27
+     118:	c2 07       	cpc	r28, r18
+     11a:	55 09       	sbc	r21, r5
+
+0000011c <__ctors_end>:
+     11c:	11 24       	eor	r1, r1
+     11e:	1f be       	out	0x3f, r1	; 63
+     120:	cf ef       	ldi	r28, 0xFF	; 255
+     122:	da e0       	ldi	r29, 0x0A	; 10
+     124:	de bf       	out	0x3e, r29	; 62
+     126:	cd bf       	out	0x3d, r28	; 61
+
+00000128 <__do_copy_data>:
+     128:	13 e0       	ldi	r17, 0x03	; 3
+     12a:	a0 e0       	ldi	r26, 0x00	; 0
+     12c:	b1 e0       	ldi	r27, 0x01	; 1
+     12e:	ee e6       	ldi	r30, 0x6E	; 110
+     130:	f3 e1       	ldi	r31, 0x13	; 19
+     132:	02 c0       	rjmp	.+4      	; 0x138 <__do_copy_data+0x10>
+     134:	05 90       	lpm	r0, Z+
+     136:	0d 92       	st	X+, r0
+     138:	a4 33       	cpi	r26, 0x34	; 52
+     13a:	b1 07       	cpc	r27, r17
+     13c:	d9 f7       	brne	.-10     	; 0x134 <__do_copy_data+0xc>
+
+0000013e <__do_clear_bss>:
+     13e:	23 e0       	ldi	r18, 0x03	; 3
+     140:	a4 e3       	ldi	r26, 0x34	; 52
+     142:	b3 e0       	ldi	r27, 0x03	; 3
+     144:	01 c0       	rjmp	.+2      	; 0x148 <.do_clear_bss_start>
+
+00000146 <.do_clear_bss_loop>:
+     146:	1d 92       	st	X+, r1
+
+00000148 <.do_clear_bss_start>:
+     148:	a9 34       	cpi	r26, 0x49	; 73
+     14a:	b2 07       	cpc	r27, r18
+     14c:	e1 f7       	brne	.-8      	; 0x146 <.do_clear_bss_loop>
+
+0000014e <__do_global_ctors>:
+     14e:	10 e0       	ldi	r17, 0x00	; 0
+     150:	ce e8       	ldi	r28, 0x8E	; 142
+     152:	d0 e0       	ldi	r29, 0x00	; 0
+     154:	04 c0       	rjmp	.+8      	; 0x15e <__do_global_ctors+0x10>
+     156:	21 97       	sbiw	r28, 0x01	; 1
+     158:	fe 01       	movw	r30, r28
+     15a:	0e 94 af 09 	call	0x135e	; 0x135e <__tablejump2__>
+     15e:	cb 38       	cpi	r28, 0x8B	; 139
+     160:	d1 07       	cpc	r29, r17
+     162:	c9 f7       	brne	.-14     	; 0x156 <__do_global_ctors+0x8>
+     164:	0e 94 9f 07 	call	0xf3e	; 0xf3e <main>
+     168:	0c 94 b5 09 	jmp	0x136a	; 0x136a <_exit>
+
+0000016c <__bad_interrupt>:
+     16c:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000170 <_Z9sspi_initv>:
+
+
+
+void sspi_init(void)
+{
+	SSPI_DDR_NAME  |= (1 << SSPI_SS) | (1 << SSPI_MOSI) | (1 << SSPI_SCLK);
+     170:	84 b1       	in	r24, 0x04	; 4
+     172:	86 61       	ori	r24, 0x16	; 22
+     174:	84 b9       	out	0x04, r24	; 4
+	
+	SSPI_PORT_NAME |= (1 << SSPI_SS) | (1 << SSPI_MOSI) | (1 << SSPI_MOSI);
+     176:	85 b1       	in	r24, 0x05	; 5
+     178:	84 61       	ori	r24, 0x14	; 20
+     17a:	85 b9       	out	0x05, r24	; 5
+	
+	SSPI_PORT_NAME &= ~(1 << SSPI_SCLK);
+     17c:	29 98       	cbi	0x05, 1	; 5
+     17e:	08 95       	ret
+
+00000180 <_Z9sspi_sendh>:
+}
+
+void sspi_send(unsigned char byte)
+{
+     180:	98 e0       	ldi	r25, 0x08	; 8
+	unsigned char i = 0;
+	
+	for(i = 0; i < 8; ++i)
+	{
+		if ( byte & 0x80 )
+     182:	88 23       	and	r24, r24
+     184:	14 f4       	brge	.+4      	; 0x18a <_Z9sspi_sendh+0xa>
+		SSPI_PORT_NAME |= (1 << SSPI_MOSI);
+     186:	2a 9a       	sbi	0x05, 2	; 5
+     188:	01 c0       	rjmp	.+2      	; 0x18c <_Z9sspi_sendh+0xc>
+		else
+		SSPI_PORT_NAME &= ~(1 << SSPI_MOSI);
+     18a:	2a 98       	cbi	0x05, 2	; 5
+		
+		SSPI_PORT_NAME |= (1 << SSPI_SCLK);
+     18c:	29 9a       	sbi	0x05, 1	; 5
+		asm("nop");
+     18e:	00 00       	nop
+		byte <<= 1;
+     190:	88 0f       	add	r24, r24
+		SSPI_PORT_NAME &= ~(1 << SSPI_SCLK);
+     192:	29 98       	cbi	0x05, 1	; 5
+     194:	91 50       	subi	r25, 0x01	; 1
+
+void sspi_send(unsigned char byte)
+{
+	unsigned char i = 0;
+	
+	for(i = 0; i < 8; ++i)
+     196:	a9 f7       	brne	.-22     	; 0x182 <_Z9sspi_sendh+0x2>
+		SSPI_PORT_NAME |= (1 << SSPI_SCLK);
+		asm("nop");
+		byte <<= 1;
+		SSPI_PORT_NAME &= ~(1 << SSPI_SCLK);
+	}
+}
+     198:	08 95       	ret
+
+0000019a <_Z9sspi_recvv>:
+
+unsigned char sspi_recv()
+{
+     19a:	98 e0       	ldi	r25, 0x08	; 8
+	unsigned char i, result = 0;
+     19c:	80 e0       	ldi	r24, 0x00	; 0
+	
+	for(i = 0; i < 8; ++i)
+	{
+		SSPI_PORT_NAME |= (1 << SSPI_SCLK);
+     19e:	29 9a       	sbi	0x05, 1	; 5
+		
+		result <<= 1;
+     1a0:	88 0f       	add	r24, r24
+		if ( SSPI_PIN_NAME & (1 << SSPI_MISO) )
+     1a2:	1b 99       	sbic	0x03, 3	; 3
+		result |= 1;
+     1a4:	81 60       	ori	r24, 0x01	; 1
+
+		asm("nop");
+     1a6:	00 00       	nop
+		SSPI_PORT_NAME &= ~(1 << SSPI_SCLK);
+     1a8:	29 98       	cbi	0x05, 1	; 5
+		asm("nop");
+     1aa:	00 00       	nop
+     1ac:	91 50       	subi	r25, 0x01	; 1
+
+unsigned char sspi_recv()
+{
+	unsigned char i, result = 0;
+	
+	for(i = 0; i < 8; ++i)
+     1ae:	b9 f7       	brne	.-18     	; 0x19e <_Z9sspi_recvv+0x4>
+		SSPI_PORT_NAME &= ~(1 << SSPI_SCLK);
+		asm("nop");
+	}
+	
+	return result;
+}
+     1b0:	08 95       	ret
+
+000001b2 <_Z13usb_core_initv>:
+	WAIT_EVENT(!(UEINTX & (1 << RXOUTI)));
+}
+
+void ClearOUT()
+{
+	UEINTX = ~(1 << RXOUTI);
+     1b2:	f8 94       	cli
+     1b4:	e7 ed       	ldi	r30, 0xD7	; 215
+     1b6:	f0 e0       	ldi	r31, 0x00	; 0
+     1b8:	80 81       	ld	r24, Z
+     1ba:	81 60       	ori	r24, 0x01	; 1
+     1bc:	80 83       	st	Z, r24
+     1be:	80 ea       	ldi	r24, 0xA0	; 160
+     1c0:	80 93 d8 00 	sts	0x00D8, r24	; 0x8000d8 <__DATA_REGION_ORIGIN__+0x78>
+     1c4:	89 b5       	in	r24, 0x29	; 41
+     1c6:	80 61       	ori	r24, 0x10	; 16
+     1c8:	89 bd       	out	0x29, r24	; 41
+     1ca:	89 b5       	in	r24, 0x29	; 41
+     1cc:	82 60       	ori	r24, 0x02	; 2
+     1ce:	89 bd       	out	0x29, r24	; 41
+     1d0:	09 b4       	in	r0, 0x29	; 41
+     1d2:	00 fe       	sbrs	r0, 0
+     1d4:	fd cf       	rjmp	.-6      	; 0x1d0 <_Z13usb_core_initv+0x1e>
+     1d6:	8f e9       	ldi	r24, 0x9F	; 159
+     1d8:	9f e0       	ldi	r25, 0x0F	; 15
+     1da:	01 97       	sbiw	r24, 0x01	; 1
+     1dc:	f1 f7       	brne	.-4      	; 0x1da <_Z13usb_core_initv+0x28>
+     1de:	00 c0       	rjmp	.+0      	; 0x1e0 <_Z13usb_core_initv+0x2e>
+     1e0:	00 00       	nop
+     1e2:	e8 ed       	ldi	r30, 0xD8	; 216
+     1e4:	f0 e0       	ldi	r31, 0x00	; 0
+     1e6:	80 81       	ld	r24, Z
+     1e8:	8f 7c       	andi	r24, 0xCF	; 207
+     1ea:	80 61       	ori	r24, 0x10	; 16
+     1ec:	80 83       	st	Z, r24
+     1ee:	e0 ee       	ldi	r30, 0xE0	; 224
+     1f0:	f0 e0       	ldi	r31, 0x00	; 0
+     1f2:	80 81       	ld	r24, Z
+     1f4:	80 7f       	andi	r24, 0xF0	; 240
+     1f6:	80 83       	st	Z, r24
+     1f8:	e1 ee       	ldi	r30, 0xE1	; 225
+     1fa:	f0 e0       	ldi	r31, 0x00	; 0
+     1fc:	80 81       	ld	r24, Z
+     1fe:	8e 7e       	andi	r24, 0xEE	; 238
+     200:	80 83       	st	Z, r24
+     202:	8d e0       	ldi	r24, 0x0D	; 13
+     204:	80 93 e2 00 	sts	0x00E2, r24	; 0x8000e2 <__DATA_REGION_ORIGIN__+0x82>
+     208:	78 94       	sei
+     20a:	81 e0       	ldi	r24, 0x01	; 1
+     20c:	08 95       	ret
+
+0000020e <_Z22ReceivedSetupInterruptv>:
+     20e:	80 91 e8 00 	lds	r24, 0x00E8	; 0x8000e8 <__DATA_REGION_ORIGIN__+0x88>
+     212:	83 fb       	bst	r24, 3
+     214:	88 27       	eor	r24, r24
+     216:	80 f9       	bld	r24, 0
+     218:	08 95       	ret
+
+0000021a <_Z18InitializeEndpointccc>:
+     21a:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+     21e:	81 e0       	ldi	r24, 0x01	; 1
+     220:	80 93 eb 00 	sts	0x00EB, r24	; 0x8000eb <__DATA_REGION_ORIGIN__+0x8b>
+     224:	60 93 ec 00 	sts	0x00EC, r22	; 0x8000ec <__DATA_REGION_ORIGIN__+0x8c>
+     228:	40 93 ed 00 	sts	0x00ED, r20	; 0x8000ed <__DATA_REGION_ORIGIN__+0x8d>
+     22c:	80 91 ee 00 	lds	r24, 0x00EE	; 0x8000ee <__DATA_REGION_ORIGIN__+0x8e>
+     230:	88 1f       	adc	r24, r24
+     232:	88 27       	eor	r24, r24
+     234:	88 1f       	adc	r24, r24
+     236:	08 95       	ret
+
+00000238 <__vector_10>:
+     238:	1f 92       	push	r1
+     23a:	0f 92       	push	r0
+     23c:	0f b6       	in	r0, 0x3f	; 63
+     23e:	0f 92       	push	r0
+     240:	11 24       	eor	r1, r1
+     242:	2f 93       	push	r18
+     244:	3f 93       	push	r19
+     246:	4f 93       	push	r20
+     248:	5f 93       	push	r21
+     24a:	6f 93       	push	r22
+     24c:	7f 93       	push	r23
+     24e:	8f 93       	push	r24
+     250:	9f 93       	push	r25
+     252:	af 93       	push	r26
+     254:	bf 93       	push	r27
+     256:	ef 93       	push	r30
+     258:	ff 93       	push	r31
+     25a:	e1 ee       	ldi	r30, 0xE1	; 225
+     25c:	f0 e0       	ldi	r31, 0x00	; 0
+     25e:	90 81       	ld	r25, Z
+     260:	80 81       	ld	r24, Z
+     262:	83 7f       	andi	r24, 0xF3	; 243
+     264:	80 83       	st	Z, r24
+     266:	93 ff       	sbrs	r25, 3
+     268:	08 c0       	rjmp	.+16     	; 0x27a <__vector_10+0x42>
+     26a:	42 e3       	ldi	r20, 0x32	; 50
+     26c:	60 e0       	ldi	r22, 0x00	; 0
+     26e:	80 e0       	ldi	r24, 0x00	; 0
+     270:	0e 94 0d 01 	call	0x21a	; 0x21a <_Z18InitializeEndpointccc>
+     274:	88 e0       	ldi	r24, 0x08	; 8
+     276:	80 93 f0 00 	sts	0x00F0, r24	; 0x8000f0 <__DATA_REGION_ORIGIN__+0x90>
+     27a:	ff 91       	pop	r31
+     27c:	ef 91       	pop	r30
+     27e:	bf 91       	pop	r27
+     280:	af 91       	pop	r26
+     282:	9f 91       	pop	r25
+     284:	8f 91       	pop	r24
+     286:	7f 91       	pop	r23
+     288:	6f 91       	pop	r22
+     28a:	5f 91       	pop	r21
+     28c:	4f 91       	pop	r20
+     28e:	3f 91       	pop	r19
+     290:	2f 91       	pop	r18
+     292:	0f 90       	pop	r0
+     294:	0f be       	out	0x3f, r0	; 63
+     296:	0f 90       	pop	r0
+     298:	1f 90       	pop	r1
+     29a:	18 95       	reti
+
+0000029c <_Z8ReadDataPVcc>:
+     29c:	fc 01       	movw	r30, r24
+     29e:	9f ef       	ldi	r25, 0xFF	; 255
+     2a0:	96 0f       	add	r25, r22
+     2a2:	66 23       	and	r22, r22
+     2a4:	41 f0       	breq	.+16     	; 0x2b6 <_Z8ReadDataPVcc+0x1a>
+     2a6:	a1 ef       	ldi	r26, 0xF1	; 241
+     2a8:	b0 e0       	ldi	r27, 0x00	; 0
+     2aa:	8c 91       	ld	r24, X
+     2ac:	80 83       	st	Z, r24
+     2ae:	91 50       	subi	r25, 0x01	; 1
+     2b0:	31 96       	adiw	r30, 0x01	; 1
+     2b2:	9f 3f       	cpi	r25, 0xFF	; 255
+     2b4:	d1 f7       	brne	.-12     	; 0x2aa <_Z8ReadDataPVcc+0xe>
+     2b6:	08 95       	ret
+
+000002b8 <_Z11WaitInTokenv>:
+     2b8:	e8 ee       	ldi	r30, 0xE8	; 232
+     2ba:	f0 e0       	ldi	r31, 0x00	; 0
+     2bc:	80 81       	ld	r24, Z
+     2be:	80 ff       	sbrs	r24, 0
+     2c0:	fd cf       	rjmp	.-6      	; 0x2bc <_Z11WaitInTokenv+0x4>
+     2c2:	08 95       	ret
+
+000002c4 <_Z12WaitOutTokenv>:
+     2c4:	e8 ee       	ldi	r30, 0xE8	; 232
+     2c6:	f0 e0       	ldi	r31, 0x00	; 0
+     2c8:	80 81       	ld	r24, Z
+     2ca:	82 ff       	sbrs	r24, 2
+     2cc:	fd cf       	rjmp	.-6      	; 0x2c8 <_Z12WaitOutTokenv+0x4>
+     2ce:	08 95       	ret
+
+000002d0 <_Z9WaitINOUTv>:
+}
+
+bool WaitINOUT()
+{
+	WAIT_EVENT(!(UEINTX & ((1 << TXINI) | (1 << RXOUTI))))
+     2d0:	e8 ee       	ldi	r30, 0xE8	; 232
+     2d2:	f0 e0       	ldi	r31, 0x00	; 0
+     2d4:	80 81       	ld	r24, Z
+     2d6:	85 70       	andi	r24, 0x05	; 5
+     2d8:	e9 f3       	breq	.-6      	; 0x2d4 <_Z9WaitINOUTv+0x4>
+	
+	return (UEINTX & (1 << RXOUTI)) == 0;
+     2da:	80 91 e8 00 	lds	r24, 0x00E8	; 0x8000e8 <__DATA_REGION_ORIGIN__+0x88>
+     2de:	82 fb       	bst	r24, 2
+     2e0:	88 27       	eor	r24, r24
+     2e2:	80 f9       	bld	r24, 0
+}
+     2e4:	91 e0       	ldi	r25, 0x01	; 1
+     2e6:	89 27       	eor	r24, r25
+     2e8:	08 95       	ret
+
+000002ea <_Z19InitControlTransfers>:
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     2ea:	10 92 e9 00 	sts	0x00E9, r1	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+
+void InitControlTransfer(const short End)
+{
+	SetEndpoint(0);
+	
+	_cmark = 0;
+     2ee:	10 92 37 03 	sts	0x0337, r1	; 0x800337 <_ZL6_cmark+0x1>
+     2f2:	10 92 36 03 	sts	0x0336, r1	; 0x800336 <_ZL6_cmark>
+	_cend = End;
+     2f6:	90 93 35 03 	sts	0x0335, r25	; 0x800335 <__data_end+0x1>
+     2fa:	80 93 34 03 	sts	0x0334, r24	; 0x800334 <__data_end>
+     2fe:	08 95       	ret
+
+00000300 <_Z19SendControlTransferc>:
+}
+
+bool SendControlTransfer(const char Data)
+{
+     300:	cf 93       	push	r28
+	if ( _cmark < _cend )
+     302:	40 91 36 03 	lds	r20, 0x0336	; 0x800336 <_ZL6_cmark>
+     306:	50 91 37 03 	lds	r21, 0x0337	; 0x800337 <_ZL6_cmark+0x1>
+     30a:	20 91 34 03 	lds	r18, 0x0334	; 0x800334 <__data_end>
+     30e:	30 91 35 03 	lds	r19, 0x0335	; 0x800335 <__data_end+0x1>
+     312:	42 17       	cp	r20, r18
+     314:	53 07       	cpc	r21, r19
+     316:	9c f4       	brge	.+38     	; 0x33e <_Z19SendControlTransferc+0x3e>
+     318:	c8 2f       	mov	r28, r24
+	{
+		if (!WaitINOUT())
+     31a:	0e 94 68 01 	call	0x2d0	; 0x2d0 <_Z9WaitINOUTv>
+     31e:	88 23       	and	r24, r24
+     320:	c1 f0       	breq	.+48     	; 0x352 <_Z19SendControlTransferc+0x52>
+	*Data++ = UEDATX;
+}
+
+void SendByte(char Byte)
+{
+	UEDATX = Byte;
+     322:	c0 93 f1 00 	sts	0x00F1, r28	; 0x8000f1 <__DATA_REGION_ORIGIN__+0x91>
+	{
+		if (!WaitINOUT())
+			return false;
+			
+		SendByte(Data);
+		if (!((_cmark + 1) & 0x3F)) // 64 Fifo is full, need to release this packet...
+     326:	80 91 36 03 	lds	r24, 0x0336	; 0x800336 <_ZL6_cmark>
+     32a:	90 91 37 03 	lds	r25, 0x0337	; 0x800337 <_ZL6_cmark+0x1>
+     32e:	01 96       	adiw	r24, 0x01	; 1
+     330:	8f 73       	andi	r24, 0x3F	; 63
+     332:	99 27       	eor	r25, r25
+     334:	89 2b       	or	r24, r25
+     336:	19 f4       	brne	.+6      	; 0x33e <_Z19SendControlTransferc+0x3e>
+	WAIT_EVENT(!(UEINTX & (1 << TXINI)))
+}
+
+void CleanIN()
+{
+	UEINTX = ~(1 << TXINI);
+     338:	8e ef       	ldi	r24, 0xFE	; 254
+     33a:	80 93 e8 00 	sts	0x00E8, r24	; 0x8000e8 <__DATA_REGION_ORIGIN__+0x88>
+		if (!((_cmark + 1) & 0x3F)) // 64 Fifo is full, need to release this packet...
+			CleanIN();
+		
+	}
+	
+	_cmark++;
+     33e:	80 91 36 03 	lds	r24, 0x0336	; 0x800336 <_ZL6_cmark>
+     342:	90 91 37 03 	lds	r25, 0x0337	; 0x800337 <_ZL6_cmark+0x1>
+     346:	01 96       	adiw	r24, 0x01	; 1
+     348:	90 93 37 03 	sts	0x0337, r25	; 0x800337 <_ZL6_cmark+0x1>
+     34c:	80 93 36 03 	sts	0x0336, r24	; 0x800336 <_ZL6_cmark>
+	return true;
+     350:	81 e0       	ldi	r24, 0x01	; 1
+}
+     352:	cf 91       	pop	r28
+     354:	08 95       	ret
+
+00000356 <_Z22USBSendControlTransfercPKcs>:
+
+bool USBSendControlTransfer(const char Flags, const char* Data, short Length)
+{
+     356:	0f 93       	push	r16
+     358:	1f 93       	push	r17
+     35a:	cf 93       	push	r28
+     35c:	df 93       	push	r29
+	if ( _cmark >= _cend)
+     35e:	20 91 36 03 	lds	r18, 0x0336	; 0x800336 <_ZL6_cmark>
+     362:	30 91 37 03 	lds	r19, 0x0337	; 0x800337 <_ZL6_cmark+0x1>
+     366:	80 91 34 03 	lds	r24, 0x0334	; 0x800334 <__data_end>
+     36a:	90 91 35 03 	lds	r25, 0x0335	; 0x800335 <__data_end+0x1>
+     36e:	28 17       	cp	r18, r24
+     370:	39 07       	cpc	r19, r25
+     372:	6c f4       	brge	.+26     	; 0x38e <_Z22USBSendControlTransfercPKcs+0x38>
+     374:	8b 01       	movw	r16, r22
+     376:	eb 01       	movw	r28, r22
+     378:	04 0f       	add	r16, r20
+     37a:	15 1f       	adc	r17, r21
+	
+	char* data = (char*)Data;
+	int sent = Length;
+	//char pgm = flags & TRANSFER_PGM;
+	
+	while( Length-- )
+     37c:	c0 17       	cp	r28, r16
+     37e:	d1 07       	cpc	r29, r17
+     380:	41 f0       	breq	.+16     	; 0x392 <_Z22USBSendControlTransfercPKcs+0x3c>
+	{
+		char c = *(data++);
+		if ( !SendControlTransfer(c) )
+     382:	89 91       	ld	r24, Y+
+     384:	0e 94 80 01 	call	0x300	; 0x300 <_Z19SendControlTransferc>
+     388:	81 11       	cpse	r24, r1
+     38a:	f8 cf       	rjmp	.-16     	; 0x37c <_Z22USBSendControlTransfercPKcs+0x26>
+     38c:	03 c0       	rjmp	.+6      	; 0x394 <_Z22USBSendControlTransfercPKcs+0x3e>
+}
+
+bool USBSendControlTransfer(const char Flags, const char* Data, short Length)
+{
+	if ( _cmark >= _cend)
+		return true;
+     38e:	81 e0       	ldi	r24, 0x01	; 1
+     390:	01 c0       	rjmp	.+2      	; 0x394 <_Z22USBSendControlTransfercPKcs+0x3e>
+		char c = *(data++);
+		if ( !SendControlTransfer(c) )
+			return false; 
+	}
+	
+	return true;
+     392:	81 e0       	ldi	r24, 0x01	; 1
+}
+     394:	df 91       	pop	r29
+     396:	cf 91       	pop	r28
+     398:	1f 91       	pop	r17
+     39a:	0f 91       	pop	r16
+     39c:	08 95       	ret
+
+0000039e <_Z14SendDescriptorP8USBSetup>:
+	
+	return true;
+}
+
+bool SendDescriptor(USBSetup* Setup)
+{
+     39e:	ef 92       	push	r14
+     3a0:	ff 92       	push	r15
+     3a2:	0f 93       	push	r16
+     3a4:	1f 93       	push	r17
+     3a6:	cf 93       	push	r28
+     3a8:	df 93       	push	r29
+     3aa:	ec 01       	movw	r28, r24
+	char dType = Setup->wValueH;
+     3ac:	1b 81       	ldd	r17, Y+3	; 0x03
+	
+	InitControlTransfer(Setup->wLength);
+     3ae:	8e 81       	ldd	r24, Y+6	; 0x06
+     3b0:	9f 81       	ldd	r25, Y+7	; 0x07
+     3b2:	0e 94 75 01 	call	0x2ea	; 0x2ea <_Z19InitControlTransfers>
+	
+	
+	switch (dType)
+     3b6:	12 30       	cpi	r17, 0x02	; 2
+     3b8:	71 f0       	breq	.+28     	; 0x3d6 <_Z14SendDescriptorP8USBSetup+0x38>
+     3ba:	13 30       	cpi	r17, 0x03	; 3
+     3bc:	e1 f0       	breq	.+56     	; 0x3f6 <_Z14SendDescriptorP8USBSetup+0x58>
+     3be:	11 30       	cpi	r17, 0x01	; 1
+     3c0:	09 f0       	breq	.+2      	; 0x3c4 <_Z14SendDescriptorP8USBSetup+0x26>
+     3c2:	55 c0       	rjmp	.+170    	; 0x46e <__LOCK_REGION_LENGTH__+0x6e>
+	{
+		case USB_DEVICE_DESCRIPTOR_TYPE:
+		{
+			USBSendControlTransfer(TRANSFER_PGM, (const char*)&DeviceDescriptor, 0x12);
+     3c4:	42 e1       	ldi	r20, 0x12	; 18
+     3c6:	50 e0       	ldi	r21, 0x00	; 0
+     3c8:	6c e1       	ldi	r22, 0x1C	; 28
+     3ca:	72 e0       	ldi	r23, 0x02	; 2
+     3cc:	81 e0       	ldi	r24, 0x01	; 1
+     3ce:	0e 94 ab 01 	call	0x356	; 0x356 <_Z22USBSendControlTransfercPKcs>
+			
+			return true;
+     3d2:	81 e0       	ldi	r24, 0x01	; 1
+     3d4:	51 c0       	rjmp	.+162    	; 0x478 <__LOCK_REGION_LENGTH__+0x78>
+		}
+		
+		case USB_CONFIGURATION_DESCRIPTOR_TYPE:
+		{
+			USBSendControlTransfer(0, (const char*)&ConfigurationDescriptor, sizeof(CONFIG_DESCRIPTOR));
+     3d6:	49 e0       	ldi	r20, 0x09	; 9
+     3d8:	50 e0       	ldi	r21, 0x00	; 0
+     3da:	6e e2       	ldi	r22, 0x2E	; 46
+     3dc:	72 e0       	ldi	r23, 0x02	; 2
+     3de:	80 e0       	ldi	r24, 0x00	; 0
+     3e0:	0e 94 ab 01 	call	0x356	; 0x356 <_Z22USBSendControlTransfercPKcs>
+			USBSendControlTransfer(0, (const char*)&ConfigurationDescriptorPlus, sizeof(CDCMSCDescriptor));
+     3e4:	41 e6       	ldi	r20, 0x61	; 97
+     3e6:	50 e0       	ldi	r21, 0x00	; 0
+     3e8:	67 e3       	ldi	r22, 0x37	; 55
+     3ea:	72 e0       	ldi	r23, 0x02	; 2
+     3ec:	80 e0       	ldi	r24, 0x00	; 0
+     3ee:	0e 94 ab 01 	call	0x356	; 0x356 <_Z22USBSendControlTransfercPKcs>
+			
+			return true;
+     3f2:	81 e0       	ldi	r24, 0x01	; 1
+     3f4:	41 c0       	rjmp	.+130    	; 0x478 <__LOCK_REGION_LENGTH__+0x78>
+		}
+		
+		case USB_STRING_DESCRIPTOR_TYPE:
+		{
+			const char strIndex = Setup->wValueL;
+     3f6:	ca 81       	ldd	r28, Y+2	; 0x02
+			
+			if ( strIndex != 0 ) 
+     3f8:	cc 23       	and	r28, r28
+     3fa:	81 f1       	breq	.+96     	; 0x45c <__LOCK_REGION_LENGTH__+0x5c>
+			{
+				if ( strIndex > STRINGS_SET[0][0] )
+     3fc:	c4 30       	cpi	r28, 0x04	; 4
+     3fe:	c8 f5       	brcc	.+114    	; 0x472 <__LOCK_REGION_LENGTH__+0x72>
+					return false;
+				
+				const unsigned char strLen = STRINGS_SET[strIndex][0];
+     400:	20 e1       	ldi	r18, 0x10	; 16
+     402:	c2 9f       	mul	r28, r18
+     404:	f0 01       	movw	r30, r0
+     406:	11 24       	eor	r1, r1
+     408:	e8 52       	subi	r30, 0x28	; 40
+     40a:	fe 4f       	sbci	r31, 0xFE	; 254
+     40c:	d0 81       	ld	r29, Z
+				
+				// ??? ?????? ???????????? ? ??????? unicode,
+				//?????????? ????? ???? ?????????? ??????????? (??????) = 1(??????) + 1(???) + strsize * 2;
+				SendControlTransfer(2 + strLen * 2);
+     40e:	8d 2f       	mov	r24, r29
+     410:	88 0f       	add	r24, r24
+     412:	8e 5f       	subi	r24, 0xFE	; 254
+     414:	0e 94 80 01 	call	0x300	; 0x300 <_Z19SendControlTransferc>
+				SendControlTransfer(USB_STRING_DESCRIPTOR_TYPE); // STR_DESC_TYPE
+     418:	83 e0       	ldi	r24, 0x03	; 3
+     41a:	0e 94 80 01 	call	0x300	; 0x300 <_Z19SendControlTransferc>
+				
+				for (unsigned char i = 0; i < strLen; i++)
+     41e:	dd 23       	and	r29, r29
+     420:	51 f1       	breq	.+84     	; 0x476 <__LOCK_REGION_LENGTH__+0x76>
+     422:	30 e1       	ldi	r19, 0x10	; 16
+     424:	c3 9f       	mul	r28, r19
+     426:	c0 01       	movw	r24, r0
+     428:	11 24       	eor	r1, r1
+     42a:	8c 01       	movw	r16, r24
+     42c:	07 52       	subi	r16, 0x27	; 39
+     42e:	1e 4f       	sbci	r17, 0xFE	; 254
+     430:	d1 50       	subi	r29, 0x01	; 1
+     432:	8d 0f       	add	r24, r29
+     434:	91 1d       	adc	r25, r1
+     436:	fc 01       	movw	r30, r24
+     438:	e6 52       	subi	r30, 0x26	; 38
+     43a:	fe 4f       	sbci	r31, 0xFE	; 254
+     43c:	7f 01       	movw	r14, r30
+				{
+					char st = SendControlTransfer(STRINGS_SET[strIndex][i + 1]);
+     43e:	f8 01       	movw	r30, r16
+     440:	81 91       	ld	r24, Z+
+     442:	8f 01       	movw	r16, r30
+     444:	0e 94 80 01 	call	0x300	; 0x300 <_Z19SendControlTransferc>
+     448:	c8 2f       	mov	r28, r24
+					st &= SendControlTransfer( 0 );
+     44a:	80 e0       	ldi	r24, 0x00	; 0
+     44c:	0e 94 80 01 	call	0x300	; 0x300 <_Z19SendControlTransferc>
+     450:	8c 23       	and	r24, r28
+					
+					if ( st == 0 )
+     452:	91 f0       	breq	.+36     	; 0x478 <__LOCK_REGION_LENGTH__+0x78>
+				// ??? ?????? ???????????? ? ??????? unicode,
+				//?????????? ????? ???? ?????????? ??????????? (??????) = 1(??????) + 1(???) + strsize * 2;
+				SendControlTransfer(2 + strLen * 2);
+				SendControlTransfer(USB_STRING_DESCRIPTOR_TYPE); // STR_DESC_TYPE
+				
+				for (unsigned char i = 0; i < strLen; i++)
+     454:	0e 15       	cp	r16, r14
+     456:	1f 05       	cpc	r17, r15
+     458:	91 f7       	brne	.-28     	; 0x43e <__LOCK_REGION_LENGTH__+0x3e>
+     45a:	0e c0       	rjmp	.+28     	; 0x478 <__LOCK_REGION_LENGTH__+0x78>
+				
+				return true;
+			}
+			else
+			{
+				USBSendControlTransfer(0, (const char*)&STRING_LANGUAGE, sizeof(STRING_LANGUAGE));
+     45c:	44 e0       	ldi	r20, 0x04	; 4
+     45e:	50 e0       	ldi	r21, 0x00	; 0
+     460:	68 e1       	ldi	r22, 0x18	; 24
+     462:	72 e0       	ldi	r23, 0x02	; 2
+     464:	80 e0       	ldi	r24, 0x00	; 0
+     466:	0e 94 ab 01 	call	0x356	; 0x356 <_Z22USBSendControlTransfercPKcs>
+				return true;	
+     46a:	81 e0       	ldi	r24, 0x01	; 1
+     46c:	05 c0       	rjmp	.+10     	; 0x478 <__LOCK_REGION_LENGTH__+0x78>
+			
+			break;
+		}
+		
+		default:
+		return false;
+     46e:	80 e0       	ldi	r24, 0x00	; 0
+     470:	03 c0       	rjmp	.+6      	; 0x478 <__LOCK_REGION_LENGTH__+0x78>
+			const char strIndex = Setup->wValueL;
+			
+			if ( strIndex != 0 ) 
+			{
+				if ( strIndex > STRINGS_SET[0][0] )
+					return false;
+     472:	80 e0       	ldi	r24, 0x00	; 0
+     474:	01 c0       	rjmp	.+2      	; 0x478 <__LOCK_REGION_LENGTH__+0x78>
+					
+					if ( st == 0 )
+						return false;
+				}
+				
+				return true;
+     476:	81 e0       	ldi	r24, 0x01	; 1
+		default:
+		return false;
+	}
+	
+	return false;
+}
+     478:	df 91       	pop	r29
+     47a:	cf 91       	pop	r28
+     47c:	1f 91       	pop	r17
+     47e:	0f 91       	pop	r16
+     480:	ff 90       	pop	r15
+     482:	ef 90       	pop	r14
+     484:	08 95       	ret
+
+00000486 <_Z22USBRecvControlTransferPcs>:
+	
+	return true;
+}
+
+bool USBRecvControlTransfer(char* dist, short size)
+{	
+     486:	af 92       	push	r10
+     488:	bf 92       	push	r11
+     48a:	df 92       	push	r13
+     48c:	ef 92       	push	r14
+     48e:	ff 92       	push	r15
+     490:	0f 93       	push	r16
+     492:	1f 93       	push	r17
+     494:	cf 93       	push	r28
+     496:	df 93       	push	r29
+     498:	8c 01       	movw	r16, r24
+     49a:	eb 01       	movw	r28, r22
+	short transaction_sz = size;
+	
+	while ( transaction_sz > 0 )
+     49c:	1c 16       	cp	r1, r28
+     49e:	1d 06       	cpc	r1, r29
+     4a0:	2c f5       	brge	.+74     	; 0x4ec <_Z22USBRecvControlTransferPcs+0x66>
+	WAIT_EVENT(!(UEINTX & (1 << RXOUTI)));
+}
+
+void ClearOUT()
+{
+	UEINTX = ~(1 << RXOUTI);
+     4a2:	0f 2e       	mov	r0, r31
+     4a4:	f8 ee       	ldi	r31, 0xE8	; 232
+     4a6:	af 2e       	mov	r10, r31
+     4a8:	b1 2c       	mov	r11, r1
+     4aa:	f0 2d       	mov	r31, r0
+     4ac:	0f 2e       	mov	r0, r31
+     4ae:	fb ef       	ldi	r31, 0xFB	; 251
+     4b0:	df 2e       	mov	r13, r31
+     4b2:	f0 2d       	mov	r31, r0
+{	
+	short transaction_sz = size;
+	
+	while ( transaction_sz > 0 )
+	{
+		if ( transaction_sz > 64 ) // max packet size
+     4b4:	c1 34       	cpi	r28, 0x41	; 65
+     4b6:	d1 05       	cpc	r29, r1
+     4b8:	3c f0       	brlt	.+14     	; 0x4c8 <_Z22USBRecvControlTransferPcs+0x42>
+		{
+			size -= 64;
+     4ba:	c0 54       	subi	r28, 0x40	; 64
+     4bc:	d1 09       	sbc	r29, r1
+			transaction_sz = 64;
+     4be:	68 94       	set
+     4c0:	ee 24       	eor	r14, r14
+     4c2:	e6 f8       	bld	r14, 6
+     4c4:	f1 2c       	mov	r15, r1
+     4c6:	01 c0       	rjmp	.+2      	; 0x4ca <_Z22USBRecvControlTransferPcs+0x44>
+     4c8:	7e 01       	movw	r14, r28
+		}
+		
+		if ( WaitINOUT() )
+     4ca:	0e 94 68 01 	call	0x2d0	; 0x2d0 <_Z9WaitINOUTv>
+     4ce:	81 11       	cpse	r24, r1
+     4d0:	0f c0       	rjmp	.+30     	; 0x4f0 <_Z22USBRecvControlTransferPcs+0x6a>
+			return false;
+			
+		ReadData(dist, transaction_sz);
+     4d2:	6e 2d       	mov	r22, r14
+     4d4:	c8 01       	movw	r24, r16
+     4d6:	0e 94 4e 01 	call	0x29c	; 0x29c <_Z8ReadDataPVcc>
+	WAIT_EVENT(!(UEINTX & (1 << RXOUTI)));
+}
+
+void ClearOUT()
+{
+	UEINTX = ~(1 << RXOUTI);
+     4da:	f5 01       	movw	r30, r10
+     4dc:	d0 82       	st	Z, r13
+			return false;
+			
+		ReadData(dist, transaction_sz);
+		ClearOUT();
+		
+		dist+= transaction_sz;
+     4de:	0e 0d       	add	r16, r14
+     4e0:	1f 1d       	adc	r17, r15
+
+bool USBRecvControlTransfer(char* dist, short size)
+{	
+	short transaction_sz = size;
+	
+	while ( transaction_sz > 0 )
+     4e2:	1c 16       	cp	r1, r28
+     4e4:	1d 06       	cpc	r1, r29
+     4e6:	34 f3       	brlt	.-52     	; 0x4b4 <_Z22USBRecvControlTransferPcs+0x2e>
+		dist+= transaction_sz;
+		
+		transaction_sz = size;
+	}
+	
+	return true;
+     4e8:	81 e0       	ldi	r24, 0x01	; 1
+     4ea:	03 c0       	rjmp	.+6      	; 0x4f2 <_Z22USBRecvControlTransferPcs+0x6c>
+     4ec:	81 e0       	ldi	r24, 0x01	; 1
+     4ee:	01 c0       	rjmp	.+2      	; 0x4f2 <_Z22USBRecvControlTransferPcs+0x6c>
+			size -= 64;
+			transaction_sz = 64;
+		}
+		
+		if ( WaitINOUT() )
+			return false;
+     4f0:	80 e0       	ldi	r24, 0x00	; 0
+		
+		transaction_sz = size;
+	}
+	
+	return true;
+}
+     4f2:	df 91       	pop	r29
+     4f4:	cf 91       	pop	r28
+     4f6:	1f 91       	pop	r17
+     4f8:	0f 91       	pop	r16
+     4fa:	ff 90       	pop	r15
+     4fc:	ef 90       	pop	r14
+     4fe:	df 90       	pop	r13
+     500:	bf 90       	pop	r11
+     502:	af 90       	pop	r10
+     504:	08 95       	ret
+
+00000506 <_Z19ClassControlRequestP8USBSetup>:
+	
+	*/
+	
+	const char interface = Setup->wIndex;
+	
+	if ( interface != CDC_ACM_INTERFACE )
+     506:	fc 01       	movw	r30, r24
+     508:	24 81       	ldd	r18, Z+4	; 0x04
+     50a:	21 11       	cpse	r18, r1
+     50c:	64 c0       	rjmp	.+200    	; 0x5d6 <_Z19ClassControlRequestP8USBSetup+0xd0>
+		return false;
+
+	const char bRequest = Setup->bRequest;
+     50e:	91 81       	ldd	r25, Z+1	; 0x01
+	const char bmRequestType = Setup->bmRequestType;
+     510:	80 81       	ld	r24, Z
+
+	if ( bmRequestType == REQUEST_DEVICETOHOST_CLASS_INTERFACE )
+     512:	81 3a       	cpi	r24, 0xA1	; 161
+     514:	59 f4       	brne	.+22     	; 0x52c <_Z19ClassControlRequestP8USBSetup+0x26>
+	{
+		if ( bRequest == CDC_GET_LINE_CODING )
+     516:	91 32       	cpi	r25, 0x21	; 33
+     518:	09 f0       	breq	.+2      	; 0x51c <_Z19ClassControlRequestP8USBSetup+0x16>
+     51a:	63 c0       	rjmp	.+198    	; 0x5e2 <_Z19ClassControlRequestP8USBSetup+0xdc>
+		{
+			USBSendControlTransfer(0, (const char*)&_usbLineInfo, 7);
+     51c:	47 e0       	ldi	r20, 0x07	; 7
+     51e:	50 e0       	ldi	r21, 0x00	; 0
+     520:	6e e1       	ldi	r22, 0x1E	; 30
+     522:	71 e0       	ldi	r23, 0x01	; 1
+     524:	80 e0       	ldi	r24, 0x00	; 0
+     526:	0e 94 ab 01 	call	0x356	; 0x356 <_Z22USBSendControlTransfercPKcs>
+     52a:	5b c0       	rjmp	.+182    	; 0x5e2 <_Z19ClassControlRequestP8USBSetup+0xdc>
+		}
+	}
+	
+	if ( bmRequestType == REQUEST_HOSTTODEVICE_CLASS_INTERFACE )
+     52c:	81 32       	cpi	r24, 0x21	; 33
+     52e:	09 f0       	breq	.+2      	; 0x532 <_Z19ClassControlRequestP8USBSetup+0x2c>
+     530:	54 c0       	rjmp	.+168    	; 0x5da <_Z19ClassControlRequestP8USBSetup+0xd4>
+	{
+		if ( bRequest == CDC_SET_LINE_CODING )
+     532:	90 32       	cpi	r25, 0x20	; 32
+     534:	41 f4       	brne	.+16     	; 0x546 <_Z19ClassControlRequestP8USBSetup+0x40>
+		{
+			USBRecvControlTransfer((char*)&_usbLineInfo, 7);
+     536:	67 e0       	ldi	r22, 0x07	; 7
+     538:	70 e0       	ldi	r23, 0x00	; 0
+     53a:	8e e1       	ldi	r24, 0x1E	; 30
+     53c:	91 e0       	ldi	r25, 0x01	; 1
+     53e:	0e 94 43 02 	call	0x486	; 0x486 <_Z22USBRecvControlTransferPcs>
+				WDTCSR = wdtcsr_save;
+				
+				*(uint16_t *)magic_key_pos = 0x0000;
+			}
+		}
+		return true;
+     542:	81 e0       	ldi	r24, 0x01	; 1
+     544:	08 95       	ret
+		if ( bRequest == CDC_SET_LINE_CODING )
+		{
+			USBRecvControlTransfer((char*)&_usbLineInfo, 7);
+		}
+		
+		if ( bRequest == CDC_SEND_BREAK )
+     546:	93 32       	cpi	r25, 0x23	; 35
+     548:	61 f4       	brne	.+24     	; 0x562 <_Z19ClassControlRequestP8USBSetup+0x5c>
+		{
+			_cdcBreakValue = ((unsigned short)Setup->wValueH << 8) | Setup->wValueL;
+     54a:	83 81       	ldd	r24, Z+3	; 0x03
+     54c:	90 e0       	ldi	r25, 0x00	; 0
+     54e:	98 2f       	mov	r25, r24
+     550:	88 27       	eor	r24, r24
+     552:	22 81       	ldd	r18, Z+2	; 0x02
+     554:	82 2b       	or	r24, r18
+     556:	90 93 39 03 	sts	0x0339, r25	; 0x800339 <_ZL14_cdcBreakValue+0x1>
+     55a:	80 93 38 03 	sts	0x0338, r24	; 0x800338 <_ZL14_cdcBreakValue>
+				WDTCSR = wdtcsr_save;
+				
+				*(uint16_t *)magic_key_pos = 0x0000;
+			}
+		}
+		return true;
+     55e:	81 e0       	ldi	r24, 0x01	; 1
+     560:	08 95       	ret
+		if ( bRequest == CDC_SEND_BREAK )
+		{
+			_cdcBreakValue = ((unsigned short)Setup->wValueH << 8) | Setup->wValueL;
+		}
+		
+		if ( bRequest == CDC_SET_CONTROL_LINE_STATE )
+     562:	92 32       	cpi	r25, 0x22	; 34
+     564:	e1 f5       	brne	.+120    	; 0x5de <_Z19ClassControlRequestP8USBSetup+0xd8>
+					D0 - 0 - Not Present
+						 1 - Present
+
+				wIndex - interface number
+			*/
+			_usbLineInfo.lineState = Setup->wValueL;
+     566:	82 81       	ldd	r24, Z+2	; 0x02
+     568:	ee e1       	ldi	r30, 0x1E	; 30
+     56a:	f1 e0       	ldi	r31, 0x01	; 1
+     56c:	87 83       	std	Z+7, r24	; 0x07
+			
+			short magic_key_pos = (RAMEND-1);
+			
+			if ( _usbLineInfo.dwDTERate == 14400  && (_usbLineInfo.lineState & 0x01) == 0)
+     56e:	80 81       	ld	r24, Z
+     570:	91 81       	ldd	r25, Z+1	; 0x01
+     572:	a2 81       	ldd	r26, Z+2	; 0x02
+     574:	b3 81       	ldd	r27, Z+3	; 0x03
+     576:	80 34       	cpi	r24, 0x40	; 64
+     578:	98 43       	sbci	r25, 0x38	; 56
+     57a:	a1 05       	cpc	r26, r1
+     57c:	b1 05       	cpc	r27, r1
+     57e:	d1 f5       	brne	.+116    	; 0x5f4 <_Z19ClassControlRequestP8USBSetup+0xee>
+     580:	80 91 25 01 	lds	r24, 0x0125	; 0x800125 <_ZL12_usbLineInfo+0x7>
+     584:	80 ff       	sbrs	r24, 0
+     586:	2f c0       	rjmp	.+94     	; 0x5e6 <_Z19ClassControlRequestP8USBSetup+0xe0>
+     588:	35 c0       	rjmp	.+106    	; 0x5f4 <_Z19ClassControlRequestP8USBSetup+0xee>
+				DDRB |= 1 << PORTB6;
+				PORTB ^= 1 << PORTB6;
+				return true;
+			}
+			
+			if ( _usbLineInfo.dwDTERate == 1200 && (_usbLineInfo.lineState & 0x01) == 0)
+     58a:	80 91 25 01 	lds	r24, 0x0125	; 0x800125 <_ZL12_usbLineInfo+0x7>
+     58e:	80 ff       	sbrs	r24, 0
+     590:	3f c0       	rjmp	.+126    	; 0x610 <_Z19ClassControlRequestP8USBSetup+0x10a>
+				
+				wdtcsr_save = WDTCSR;
+				wdt_enable(WDTO_120MS);
+			}
+			
+			if ( _usbLineInfo.dwDTERate == 1200 && (_usbLineInfo.lineState & 0x01) == 0)
+     592:	80 91 1e 01 	lds	r24, 0x011E	; 0x80011e <_ZL12_usbLineInfo>
+     596:	90 91 1f 01 	lds	r25, 0x011F	; 0x80011f <_ZL12_usbLineInfo+0x1>
+     59a:	a0 91 20 01 	lds	r26, 0x0120	; 0x800120 <_ZL12_usbLineInfo+0x2>
+     59e:	b0 91 21 01 	lds	r27, 0x0121	; 0x800121 <_ZL12_usbLineInfo+0x3>
+     5a2:	80 3b       	cpi	r24, 0xB0	; 176
+     5a4:	94 40       	sbci	r25, 0x04	; 4
+     5a6:	a1 05       	cpc	r26, r1
+     5a8:	b1 05       	cpc	r27, r1
+     5aa:	09 f0       	breq	.+2      	; 0x5ae <_Z19ClassControlRequestP8USBSetup+0xa8>
+     5ac:	64 c0       	rjmp	.+200    	; 0x676 <_Z19ClassControlRequestP8USBSetup+0x170>
+     5ae:	80 91 25 01 	lds	r24, 0x0125	; 0x800125 <_ZL12_usbLineInfo+0x7>
+     5b2:	80 ff       	sbrs	r24, 0
+     5b4:	46 c0       	rjmp	.+140    	; 0x642 <_Z19ClassControlRequestP8USBSetup+0x13c>
+     5b6:	5f c0       	rjmp	.+190    	; 0x676 <_Z19ClassControlRequestP8USBSetup+0x170>
+			}
+			
+			//cancel
+			else if ( *(unsigned short *)magic_key_pos == 0x7777 )
+			{
+				wdt_reset();
+     5b8:	a8 95       	wdr
+				
+				WDTCSR |= (1<<WDCE) | (1<<WDE);
+     5ba:	e0 e6       	ldi	r30, 0x60	; 96
+     5bc:	f0 e0       	ldi	r31, 0x00	; 0
+     5be:	80 81       	ld	r24, Z
+     5c0:	88 61       	ori	r24, 0x18	; 24
+     5c2:	80 83       	st	Z, r24
+				WDTCSR = wdtcsr_save;
+     5c4:	80 91 3a 03 	lds	r24, 0x033A	; 0x80033a <_ZL11wdtcsr_save>
+     5c8:	80 83       	st	Z, r24
+				
+				*(uint16_t *)magic_key_pos = 0x0000;
+     5ca:	10 92 ff 0a 	sts	0x0AFF, r1	; 0x800aff <__bss_end+0x7b6>
+     5ce:	10 92 fe 0a 	sts	0x0AFE, r1	; 0x800afe <__bss_end+0x7b5>
+			}
+		}
+		return true;
+     5d2:	81 e0       	ldi	r24, 0x01	; 1
+     5d4:	08 95       	ret
+	*/
+	
+	const char interface = Setup->wIndex;
+	
+	if ( interface != CDC_ACM_INTERFACE )
+		return false;
+     5d6:	80 e0       	ldi	r24, 0x00	; 0
+     5d8:	08 95       	ret
+			}
+		}
+		return true;
+		
+	}
+	return false;
+     5da:	80 e0       	ldi	r24, 0x00	; 0
+     5dc:	08 95       	ret
+				WDTCSR = wdtcsr_save;
+				
+				*(uint16_t *)magic_key_pos = 0x0000;
+			}
+		}
+		return true;
+     5de:	81 e0       	ldi	r24, 0x01	; 1
+     5e0:	08 95       	ret
+		
+	}
+	return false;
+     5e2:	80 e0       	ldi	r24, 0x00	; 0
+     5e4:	08 95       	ret
+			
+			short magic_key_pos = (RAMEND-1);
+			
+			if ( _usbLineInfo.dwDTERate == 14400  && (_usbLineInfo.lineState & 0x01) == 0)
+			{
+				DDRB |= 1 << PORTB6;
+     5e6:	26 9a       	sbi	0x04, 6	; 4
+				PORTB ^= 1 << PORTB6;
+     5e8:	95 b1       	in	r25, 0x05	; 5
+     5ea:	80 e4       	ldi	r24, 0x40	; 64
+     5ec:	89 27       	eor	r24, r25
+     5ee:	85 b9       	out	0x05, r24	; 5
+				return true;
+     5f0:	81 e0       	ldi	r24, 0x01	; 1
+     5f2:	08 95       	ret
+			}
+			
+			if ( _usbLineInfo.dwDTERate == 1200 && (_usbLineInfo.lineState & 0x01) == 0)
+     5f4:	80 91 1e 01 	lds	r24, 0x011E	; 0x80011e <_ZL12_usbLineInfo>
+     5f8:	90 91 1f 01 	lds	r25, 0x011F	; 0x80011f <_ZL12_usbLineInfo+0x1>
+     5fc:	a0 91 20 01 	lds	r26, 0x0120	; 0x800120 <_ZL12_usbLineInfo+0x2>
+     600:	b0 91 21 01 	lds	r27, 0x0121	; 0x800121 <_ZL12_usbLineInfo+0x3>
+     604:	80 3b       	cpi	r24, 0xB0	; 176
+     606:	94 40       	sbci	r25, 0x04	; 4
+     608:	a1 05       	cpc	r26, r1
+     60a:	b1 05       	cpc	r27, r1
+     60c:	11 f6       	brne	.-124    	; 0x592 <_Z19ClassControlRequestP8USBSetup+0x8c>
+     60e:	bd cf       	rjmp	.-134    	; 0x58a <_Z19ClassControlRequestP8USBSetup+0x84>
+			{
+				*(uint16_t *)magic_key_pos = 0x7777;
+     610:	87 e7       	ldi	r24, 0x77	; 119
+     612:	97 e7       	ldi	r25, 0x77	; 119
+     614:	90 93 ff 0a 	sts	0x0AFF, r25	; 0x800aff <__bss_end+0x7b6>
+     618:	80 93 fe 0a 	sts	0x0AFE, r24	; 0x800afe <__bss_end+0x7b5>
+				*((uint16_t *)0x800) = 0x7777;
+     61c:	90 93 01 08 	sts	0x0801, r25	; 0x800801 <__bss_end+0x4b8>
+     620:	80 93 00 08 	sts	0x0800, r24	; 0x800800 <__bss_end+0x4b7>
+				
+				wdtcsr_save = WDTCSR;
+     624:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+     628:	80 93 3a 03 	sts	0x033A, r24	; 0x80033a <_ZL11wdtcsr_save>
+				: "n" (_SFR_MEM_ADDR(_WD_CONTROL_REG)),
+				"r" ((uint8_t)(_BV(_WD_CHANGE_BIT) | _BV(WDE))),
+				"r" ((uint8_t) ((value & 0x08 ? _WD_PS3_MASK : 0x00) |
+						_BV(WDE) | (value & 0x07)) )
+				: "r0"
+		);
+     62c:	9b e0       	ldi	r25, 0x0B	; 11
+     62e:	88 e1       	ldi	r24, 0x18	; 24
+     630:	0f b6       	in	r0, 0x3f	; 63
+     632:	f8 94       	cli
+     634:	a8 95       	wdr
+     636:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+     63a:	0f be       	out	0x3f, r0	; 63
+     63c:	90 93 60 00 	sts	0x0060, r25	; 0x800060 <__DATA_REGION_ORIGIN__>
+     640:	a8 cf       	rjmp	.-176    	; 0x592 <_Z19ClassControlRequestP8USBSetup+0x8c>
+				wdt_enable(WDTO_120MS);
+			}
+			
+			if ( _usbLineInfo.dwDTERate == 1200 && (_usbLineInfo.lineState & 0x01) == 0)
+			{
+				*(uint16_t *)magic_key_pos = 0x7777;
+     642:	87 e7       	ldi	r24, 0x77	; 119
+     644:	97 e7       	ldi	r25, 0x77	; 119
+     646:	90 93 ff 0a 	sts	0x0AFF, r25	; 0x800aff <__bss_end+0x7b6>
+     64a:	80 93 fe 0a 	sts	0x0AFE, r24	; 0x800afe <__bss_end+0x7b5>
+				*((uint16_t *)0x800) = 0x7777;
+     64e:	90 93 01 08 	sts	0x0801, r25	; 0x800801 <__bss_end+0x4b8>
+     652:	80 93 00 08 	sts	0x0800, r24	; 0x800800 <__bss_end+0x4b7>
+				
+				wdtcsr_save = WDTCSR;
+     656:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+     65a:	80 93 3a 03 	sts	0x033A, r24	; 0x80033a <_ZL11wdtcsr_save>
+     65e:	9b e0       	ldi	r25, 0x0B	; 11
+     660:	88 e1       	ldi	r24, 0x18	; 24
+     662:	0f b6       	in	r0, 0x3f	; 63
+     664:	f8 94       	cli
+     666:	a8 95       	wdr
+     668:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+     66c:	0f be       	out	0x3f, r0	; 63
+     66e:	90 93 60 00 	sts	0x0060, r25	; 0x800060 <__DATA_REGION_ORIGIN__>
+				WDTCSR = wdtcsr_save;
+				
+				*(uint16_t *)magic_key_pos = 0x0000;
+			}
+		}
+		return true;
+     672:	81 e0       	ldi	r24, 0x01	; 1
+     674:	08 95       	ret
+				wdtcsr_save = WDTCSR;
+				wdt_enable(WDTO_120MS);
+			}
+			
+			//cancel
+			else if ( *(unsigned short *)magic_key_pos == 0x7777 )
+     676:	80 91 fe 0a 	lds	r24, 0x0AFE	; 0x800afe <__bss_end+0x7b5>
+     67a:	90 91 ff 0a 	lds	r25, 0x0AFF	; 0x800aff <__bss_end+0x7b6>
+     67e:	87 37       	cpi	r24, 0x77	; 119
+     680:	97 47       	sbci	r25, 0x77	; 119
+     682:	09 f4       	brne	.+2      	; 0x686 <_Z19ClassControlRequestP8USBSetup+0x180>
+     684:	99 cf       	rjmp	.-206    	; 0x5b8 <_Z19ClassControlRequestP8USBSetup+0xb2>
+				WDTCSR = wdtcsr_save;
+				
+				*(uint16_t *)magic_key_pos = 0x0000;
+			}
+		}
+		return true;
+     686:	81 e0       	ldi	r24, 0x01	; 1
+		
+	}
+	return false;
+}
+     688:	08 95       	ret
+
+0000068a <_Z7SendUsbcPKcs>:
+	
+	return true;
+}
+
+bool SendUsb(const char epid, const char* data, short len)
+{
+     68a:	ff 92       	push	r15
+     68c:	0f 93       	push	r16
+     68e:	1f 93       	push	r17
+     690:	cf 93       	push	r28
+     692:	df 93       	push	r29
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     694:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+	
+	SetEndpoint(epid);
+
+	char *d = (char*)data;
+
+	bool zlp = false;
+     698:	30 e0       	ldi	r19, 0x00	; 0
+	*Data++ = UEDATX;
+}
+
+void SendByte(char Byte)
+{
+	UEDATX = Byte;
+     69a:	a1 ef       	ldi	r26, 0xF1	; 241
+     69c:	b0 e0       	ldi	r27, 0x00	; 0
+		}
+		
+		if (zlp) {
+			UEINTX = 0x3A;	// FIFOCON=0 NAKINI=0 RWAL=1 NAKOUTI=1 RXSTPI=1 RXOUTI=0 STALLEDI=1 TXINI=0
+			zlp = false;
+		} else if (!(UEINTX & (1<<RWAL))) { // ...release if buffer is full...
+     69e:	c8 ee       	ldi	r28, 0xE8	; 232
+     6a0:	d0 e0       	ldi	r29, 0x00	; 0
+			UEINTX = 0x3A;	// FIFOCON=0 NAKINI=0 RWAL=1 NAKOUTI=1 RXSTPI=1 RXOUTI=0 STALLEDI=1 TXINI=0
+			if (len == 0) zlp = true;
+		} else if ( len == 0 ) { 
+			UEINTX = 0x3A;	// FIFOCON=0 NAKINI=0 RWAL=1 NAKOUTI=1 RXSTPI=1 RXOUTI=0 STALLEDI=1 TXINI=0
+     6a2:	1a e3       	ldi	r17, 0x3A	; 58
+		if (zlp) {
+			UEINTX = 0x3A;	// FIFOCON=0 NAKINI=0 RWAL=1 NAKOUTI=1 RXSTPI=1 RXOUTI=0 STALLEDI=1 TXINI=0
+			zlp = false;
+		} else if (!(UEINTX & (1<<RWAL))) { // ...release if buffer is full...
+			UEINTX = 0x3A;	// FIFOCON=0 NAKINI=0 RWAL=1 NAKOUTI=1 RXSTPI=1 RXOUTI=0 STALLEDI=1 TXINI=0
+			if (len == 0) zlp = true;
+     6a4:	ff 24       	eor	r15, r15
+     6a6:	f3 94       	inc	r15
+     6a8:	00 e0       	ldi	r16, 0x00	; 0
+
+	char *d = (char*)data;
+
+	bool zlp = false;
+
+	while ( len > 0 || zlp )
+     6aa:	14 16       	cp	r1, r20
+     6ac:	15 06       	cpc	r1, r21
+     6ae:	14 f0       	brlt	.+4      	; 0x6b4 <_Z7SendUsbcPKcs+0x2a>
+     6b0:	33 23       	and	r19, r19
+     6b2:	61 f1       	breq	.+88     	; 0x70c <_Z7SendUsbcPKcs+0x82>
+	{
+		
+		char capacity = 64;
+		
+		if ( capacity > len )
+     6b4:	40 34       	cpi	r20, 0x40	; 64
+     6b6:	51 05       	cpc	r21, r1
+     6b8:	2c f5       	brge	.+74     	; 0x704 <_Z7SendUsbcPKcs+0x7a>
+		{
+			capacity = len;
+     6ba:	84 2f       	mov	r24, r20
+		}
+		
+		len -= capacity;
+		
+		while(capacity --> 0)
+     6bc:	2f ef       	ldi	r18, 0xFF	; 255
+     6be:	24 0f       	add	r18, r20
+     6c0:	44 27       	eor	r20, r20
+     6c2:	88 23       	and	r24, r24
+     6c4:	59 f0       	breq	.+22     	; 0x6dc <_Z7SendUsbcPKcs+0x52>
+     6c6:	fb 01       	movw	r30, r22
+     6c8:	82 2f       	mov	r24, r18
+		{
+			SendByte(*d++);
+     6ca:	91 91       	ld	r25, Z+
+	*Data++ = UEDATX;
+}
+
+void SendByte(char Byte)
+{
+	UEDATX = Byte;
+     6cc:	9c 93       	st	X, r25
+			capacity = len;
+		}
+		
+		len -= capacity;
+		
+		while(capacity --> 0)
+     6ce:	81 50       	subi	r24, 0x01	; 1
+     6d0:	e0 f7       	brcc	.-8      	; 0x6ca <_Z7SendUsbcPKcs+0x40>
+     6d2:	82 2f       	mov	r24, r18
+     6d4:	90 e0       	ldi	r25, 0x00	; 0
+     6d6:	01 96       	adiw	r24, 0x01	; 1
+     6d8:	68 0f       	add	r22, r24
+     6da:	79 1f       	adc	r23, r25
+		{
+			SendByte(*d++);
+		}
+		
+		if (zlp) {
+     6dc:	33 23       	and	r19, r19
+     6de:	19 f0       	breq	.+6      	; 0x6e6 <_Z7SendUsbcPKcs+0x5c>
+			UEINTX = 0x3A;	// FIFOCON=0 NAKINI=0 RWAL=1 NAKOUTI=1 RXSTPI=1 RXOUTI=0 STALLEDI=1 TXINI=0
+     6e0:	18 83       	st	Y, r17
+			zlp = false;
+     6e2:	30 2f       	mov	r19, r16
+     6e4:	e2 cf       	rjmp	.-60     	; 0x6aa <_Z7SendUsbcPKcs+0x20>
+		} else if (!(UEINTX & (1<<RWAL))) { // ...release if buffer is full...
+     6e6:	88 81       	ld	r24, Y
+     6e8:	85 fd       	sbrc	r24, 5
+     6ea:	07 c0       	rjmp	.+14     	; 0x6fa <_Z7SendUsbcPKcs+0x70>
+			UEINTX = 0x3A;	// FIFOCON=0 NAKINI=0 RWAL=1 NAKOUTI=1 RXSTPI=1 RXOUTI=0 STALLEDI=1 TXINI=0
+     6ec:	18 83       	st	Y, r17
+			if (len == 0) zlp = true;
+     6ee:	3f 2d       	mov	r19, r15
+     6f0:	41 15       	cp	r20, r1
+     6f2:	51 05       	cpc	r21, r1
+     6f4:	d1 f2       	breq	.-76     	; 0x6aa <_Z7SendUsbcPKcs+0x20>
+     6f6:	30 2f       	mov	r19, r16
+     6f8:	d8 cf       	rjmp	.-80     	; 0x6aa <_Z7SendUsbcPKcs+0x20>
+		} else if ( len == 0 ) { 
+     6fa:	41 15       	cp	r20, r1
+     6fc:	51 05       	cpc	r21, r1
+     6fe:	a9 f6       	brne	.-86     	; 0x6aa <_Z7SendUsbcPKcs+0x20>
+			UEINTX = 0x3A;	// FIFOCON=0 NAKINI=0 RWAL=1 NAKOUTI=1 RXSTPI=1 RXOUTI=0 STALLEDI=1 TXINI=0
+     700:	18 83       	st	Y, r17
+     702:	d3 cf       	rjmp	.-90     	; 0x6aa <_Z7SendUsbcPKcs+0x20>
+		if ( capacity > len )
+		{
+			capacity = len;
+		}
+		
+		len -= capacity;
+     704:	40 54       	subi	r20, 0x40	; 64
+     706:	51 09       	sbc	r21, r1
+		
+		while(capacity --> 0)
+     708:	2f e3       	ldi	r18, 0x3F	; 63
+     70a:	dd cf       	rjmp	.-70     	; 0x6c6 <_Z7SendUsbcPKcs+0x3c>
+		}
+		
+	}
+	
+	return true;
+}
+     70c:	81 e0       	ldi	r24, 0x01	; 1
+     70e:	df 91       	pop	r29
+     710:	cf 91       	pop	r28
+     712:	1f 91       	pop	r17
+     714:	0f 91       	pop	r16
+     716:	ff 90       	pop	r15
+     718:	08 95       	ret
+
+0000071a <_Z12SCSI_Executev>:
+
+
+
+
+
+void SCSI_Execute(){
+     71a:	4f 92       	push	r4
+     71c:	5f 92       	push	r5
+     71e:	6f 92       	push	r6
+     720:	7f 92       	push	r7
+     722:	8f 92       	push	r8
+     724:	9f 92       	push	r9
+     726:	af 92       	push	r10
+     728:	bf 92       	push	r11
+     72a:	cf 92       	push	r12
+     72c:	df 92       	push	r13
+     72e:	ef 92       	push	r14
+     730:	ff 92       	push	r15
+     732:	0f 93       	push	r16
+     734:	1f 93       	push	r17
+     736:	cf 93       	push	r28
+     738:	df 93       	push	r29
+     73a:	cd b7       	in	r28, 0x3d	; 61
+     73c:	de b7       	in	r29, 0x3e	; 62
+     73e:	cc 52       	subi	r28, 0x2C	; 44
+     740:	d2 40       	sbci	r29, 0x02	; 2
+     742:	0f b6       	in	r0, 0x3f	; 63
+     744:	f8 94       	cli
+     746:	de bf       	out	0x3e, r29	; 62
+     748:	0f be       	out	0x3f, r0	; 63
+     74a:	cd bf       	out	0x3d, r28	; 61
+	uint8_t j;
+
+	USB_MSD_CBW cbw;
+	USB_MSD_CSW csw = {
+		.dCSWSignature = 0x53425355
+	};
+     74c:	fe 01       	movw	r30, r28
+     74e:	b0 96       	adiw	r30, 0x20	; 32
+     750:	8d e0       	ldi	r24, 0x0D	; 13
+     752:	df 01       	movw	r26, r30
+     754:	1d 92       	st	X+, r1
+     756:	8a 95       	dec	r24
+     758:	e9 f7       	brne	.-6      	; 0x754 <_Z12SCSI_Executev+0x3a>
+     75a:	85 e5       	ldi	r24, 0x55	; 85
+     75c:	93 e5       	ldi	r25, 0x53	; 83
+     75e:	a2 e4       	ldi	r26, 0x42	; 66
+     760:	b3 e5       	ldi	r27, 0x53	; 83
+     762:	88 a3       	std	Y+32, r24	; 0x20
+     764:	99 a3       	std	Y+33, r25	; 0x21
+     766:	aa a3       	std	Y+34, r26	; 0x22
+     768:	bb a3       	std	Y+35, r27	; 0x23
+
+	/*if ( sd_state() != 0x00 ){
+		return;
+	}*/
+
+	debug_usb_interrupt(4);
+     76a:	84 e0       	ldi	r24, 0x04	; 4
+     76c:	0e 94 a0 09 	call	0x1340	; 0x1340 <_Z19debug_usb_interrupth>
+	
+
+	ReadData((char*)&cbw, sizeof(USB_MSD_CBW));
+     770:	6f e1       	ldi	r22, 0x1F	; 31
+     772:	ce 01       	movw	r24, r28
+     774:	01 96       	adiw	r24, 0x01	; 1
+     776:	0e 94 4e 01 	call	0x29c	; 0x29c <_Z8ReadDataPVcc>
+	debug_byte(cbw.CBWCB[0]);
+     77a:	88 89       	ldd	r24, Y+16	; 0x10
+     77c:	0e 94 8b 09 	call	0x1316	; 0x1316 <_Z10debug_byteh>
+	UEINTX = 0x6B;	// FIFOCON=0 NAKINI=1 RWAL=1 NAKOUTI=0 RXSTPI=1 RXOUTI=0 STALLEDI=1 TXINI=1
+     780:	8b e6       	ldi	r24, 0x6B	; 107
+     782:	80 93 e8 00 	sts	0x00E8, r24	; 0x8000e8 <__DATA_REGION_ORIGIN__+0x88>
+	//debug_bytes((char*)&cbw, sizeof(USB_MSD_CBW));
+
+	if ( cbw.dCBWSignature != 0x43425355 )
+     786:	89 81       	ldd	r24, Y+1	; 0x01
+     788:	9a 81       	ldd	r25, Y+2	; 0x02
+     78a:	ab 81       	ldd	r26, Y+3	; 0x03
+     78c:	bc 81       	ldd	r27, Y+4	; 0x04
+     78e:	85 35       	cpi	r24, 0x55	; 85
+     790:	93 45       	sbci	r25, 0x53	; 83
+     792:	a2 44       	sbci	r26, 0x42	; 66
+     794:	b3 44       	sbci	r27, 0x43	; 67
+     796:	29 f0       	breq	.+10     	; 0x7a2 <_Z12SCSI_Executev+0x88>
+	{
+		debug_send("%2;");
+     798:	87 e3       	ldi	r24, 0x37	; 55
+     79a:	91 e0       	ldi	r25, 0x01	; 1
+     79c:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+		return; // error
+     7a0:	83 c2       	rjmp	.+1286   	; 0xca8 <__stack+0x1a9>
+	}
+
+	csw.dCSWTag = cbw.dCBWTag;
+     7a2:	8d 81       	ldd	r24, Y+5	; 0x05
+     7a4:	9e 81       	ldd	r25, Y+6	; 0x06
+     7a6:	af 81       	ldd	r26, Y+7	; 0x07
+     7a8:	b8 85       	ldd	r27, Y+8	; 0x08
+     7aa:	8c a3       	std	Y+36, r24	; 0x24
+     7ac:	9d a3       	std	Y+37, r25	; 0x25
+     7ae:	ae a3       	std	Y+38, r26	; 0x26
+     7b0:	bf a3       	std	Y+39, r27	; 0x27
+	UEINTX = 0x3A;
+
+
+	*/
+
+	switch (cbw.CBWCB[0]){
+     7b2:	e8 89       	ldd	r30, Y+16	; 0x10
+     7b4:	8e 2f       	mov	r24, r30
+     7b6:	90 e0       	ldi	r25, 0x00	; 0
+     7b8:	8b 32       	cpi	r24, 0x2B	; 43
+     7ba:	91 05       	cpc	r25, r1
+     7bc:	08 f0       	brcs	.+2      	; 0x7c0 <_Z12SCSI_Executev+0xa6>
+     7be:	51 c2       	rjmp	.+1186   	; 0xc62 <__stack+0x163>
+     7c0:	fc 01       	movw	r30, r24
+     7c2:	ea 5a       	subi	r30, 0xAA	; 170
+     7c4:	ff 4f       	sbci	r31, 0xFF	; 255
+     7c6:	0c 94 af 09 	jmp	0x135e	; 0x135e <__tablejump2__>
+		//Если INQUIRY
+		case INQUIRY:
+		//Проверка битов EVPD и CMDDT
+		if (cbw.CBWCB[1] == 0x00){ // standart request
+     7ca:	89 89       	ldd	r24, Y+17	; 0x11
+     7cc:	81 11       	cpse	r24, r1
+     7ce:	29 c0       	rjmp	.+82     	; 0x822 <_Z12SCSI_Executev+0x108>
+			//Передаем стандартный ответ на INQUIRY
+			debug_send("@110");
+     7d0:	8b e3       	ldi	r24, 0x3B	; 59
+     7d2:	91 e0       	ldi	r25, 0x01	; 1
+     7d4:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     7d8:	85 e0       	ldi	r24, 0x05	; 5
+     7da:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+		//Проверка битов EVPD и CMDDT
+		if (cbw.CBWCB[1] == 0x00){ // standart request
+			//Передаем стандартный ответ на INQUIRY
+			debug_send("@110");
+			SetEndpoint(5);
+			WaitInToken();
+     7de:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+			SendUsb(5, (char*)&inq_resp, cbw.CBWCB[4]);
+     7e2:	4c 89       	ldd	r20, Y+20	; 0x14
+     7e4:	50 e0       	ldi	r21, 0x00	; 0
+     7e6:	6d ea       	ldi	r22, 0xAD	; 173
+     7e8:	71 e0       	ldi	r23, 0x01	; 1
+     7ea:	85 e0       	ldi	r24, 0x05	; 5
+     7ec:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+			//Заполняем поля CSW
+			csw.dCSWDataResidue = cbw.dCBWDataTransferLength - cbw.CBWCB[4];
+     7f0:	2c 89       	ldd	r18, Y+20	; 0x14
+     7f2:	89 85       	ldd	r24, Y+9	; 0x09
+     7f4:	9a 85       	ldd	r25, Y+10	; 0x0a
+     7f6:	ab 85       	ldd	r26, Y+11	; 0x0b
+     7f8:	bc 85       	ldd	r27, Y+12	; 0x0c
+     7fa:	82 1b       	sub	r24, r18
+     7fc:	91 09       	sbc	r25, r1
+     7fe:	a1 09       	sbc	r26, r1
+     800:	b1 09       	sbc	r27, r1
+     802:	88 a7       	std	Y+40, r24	; 0x28
+     804:	99 a7       	std	Y+41, r25	; 0x29
+     806:	aa a7       	std	Y+42, r26	; 0x2a
+     808:	bb a7       	std	Y+43, r27	; 0x2b
+			//Команда выполнилась успешно
+			csw.bCSWStatus = 0x00;
+     80a:	1c a6       	std	Y+44, r1	; 0x2c
+			//Посылаем контейнер состояния
+			WaitInToken();
+     80c:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+			SendUsb(5, (char *)&csw, 13);
+     810:	4d e0       	ldi	r20, 0x0D	; 13
+     812:	50 e0       	ldi	r21, 0x00	; 0
+     814:	be 01       	movw	r22, r28
+     816:	60 5e       	subi	r22, 0xE0	; 224
+     818:	7f 4f       	sbci	r23, 0xFF	; 255
+     81a:	85 e0       	ldi	r24, 0x05	; 5
+     81c:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+     820:	43 c2       	rjmp	.+1158   	; 0xca8 <__stack+0x1a9>
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     822:	85 e0       	ldi	r24, 0x05	; 5
+     824:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+			WaitInToken();
+			SendUsb(5, (char *)&csw, 13);
+			} else {
+			SetEndpoint(5);
+			//Заполняем поля CSW
+			csw.dCSWDataResidue = cbw.dCBWDataTransferLength;
+     828:	89 85       	ldd	r24, Y+9	; 0x09
+     82a:	9a 85       	ldd	r25, Y+10	; 0x0a
+     82c:	ab 85       	ldd	r26, Y+11	; 0x0b
+     82e:	bc 85       	ldd	r27, Y+12	; 0x0c
+     830:	88 a7       	std	Y+40, r24	; 0x28
+     832:	99 a7       	std	Y+41, r25	; 0x29
+     834:	aa a7       	std	Y+42, r26	; 0x2a
+     836:	bb a7       	std	Y+43, r27	; 0x2b
+			//Сообщаем об ошибке выполнения команды
+			csw.bCSWStatus = 0x01;
+     838:	81 e0       	ldi	r24, 0x01	; 1
+     83a:	8c a7       	std	Y+44, r24	; 0x2c
+			//Посылаем контейнер состояния
+			WaitInToken();
+     83c:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+			SendUsb(5, (char *)&csw, 13);
+     840:	4d e0       	ldi	r20, 0x0D	; 13
+     842:	50 e0       	ldi	r21, 0x00	; 0
+     844:	be 01       	movw	r22, r28
+     846:	60 5e       	subi	r22, 0xE0	; 224
+     848:	7f 4f       	sbci	r23, 0xFF	; 255
+     84a:	85 e0       	ldi	r24, 0x05	; 5
+     84c:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+			//Подтверждаем
+			csw.bCSWStatus = 0x00;
+     850:	1c a6       	std	Y+44, r1	; 0x2c
+			//Посылаем контейнер состояния
+			WaitInToken();
+     852:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+			SendUsb(5, (char *)&csw, 13);
+     856:	4d e0       	ldi	r20, 0x0D	; 13
+     858:	50 e0       	ldi	r21, 0x00	; 0
+     85a:	be 01       	movw	r22, r28
+     85c:	60 5e       	subi	r22, 0xE0	; 224
+     85e:	7f 4f       	sbci	r23, 0xFF	; 255
+     860:	85 e0       	ldi	r24, 0x05	; 5
+     862:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+     866:	20 c2       	rjmp	.+1088   	; 0xca8 <__stack+0x1a9>
+		}
+		break;
+
+		case READ_CAPACITY: 
+		debug_send("@120");
+     868:	80 e4       	ldi	r24, 0x40	; 64
+     86a:	91 e0       	ldi	r25, 0x01	; 1
+     86c:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     870:	85 e0       	ldi	r24, 0x05	; 5
+     872:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+
+		case READ_CAPACITY: 
+		debug_send("@120");
+		SetEndpoint(5);
+		//Передаем структуру
+		WaitInToken();
+     876:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&capacity, 8);
+     87a:	48 e0       	ldi	r20, 0x08	; 8
+     87c:	50 e0       	ldi	r21, 0x00	; 0
+     87e:	64 e0       	ldi	r22, 0x04	; 4
+     880:	71 e0       	ldi	r23, 0x01	; 1
+     882:	85 e0       	ldi	r24, 0x05	; 5
+     884:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		//Заполняем и передаем CSW
+		csw.dCSWDataResidue = cbw.dCBWDataTransferLength - cbw.CBWCB[4];
+     888:	2c 89       	ldd	r18, Y+20	; 0x14
+     88a:	89 85       	ldd	r24, Y+9	; 0x09
+     88c:	9a 85       	ldd	r25, Y+10	; 0x0a
+     88e:	ab 85       	ldd	r26, Y+11	; 0x0b
+     890:	bc 85       	ldd	r27, Y+12	; 0x0c
+     892:	82 1b       	sub	r24, r18
+     894:	91 09       	sbc	r25, r1
+     896:	a1 09       	sbc	r26, r1
+     898:	b1 09       	sbc	r27, r1
+     89a:	88 a7       	std	Y+40, r24	; 0x28
+     89c:	99 a7       	std	Y+41, r25	; 0x29
+     89e:	aa a7       	std	Y+42, r26	; 0x2a
+     8a0:	bb a7       	std	Y+43, r27	; 0x2b
+		csw.bCSWStatus = 0x00;
+     8a2:	1c a6       	std	Y+44, r1	; 0x2c
+		WaitInToken();
+     8a4:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&csw, 13);
+     8a8:	4d e0       	ldi	r20, 0x0D	; 13
+     8aa:	50 e0       	ldi	r21, 0x00	; 0
+     8ac:	be 01       	movw	r22, r28
+     8ae:	60 5e       	subi	r22, 0xE0	; 224
+     8b0:	7f 4f       	sbci	r23, 0xFF	; 255
+     8b2:	85 e0       	ldi	r24, 0x05	; 5
+     8b4:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		break;
+     8b8:	f7 c1       	rjmp	.+1006   	; 0xca8 <__stack+0x1a9>
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     8ba:	85 e0       	ldi	r24, 0x05	; 5
+     8bc:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+		SendUsb(5, (char *)&csw, 13);
+		break;
+
+		case PREVENT_ALLOW_MEDIUM_REMOVAL:
+		SetEndpoint(5);
+		csw.dCSWDataResidue = 0;
+     8c0:	18 a6       	std	Y+40, r1	; 0x28
+     8c2:	19 a6       	std	Y+41, r1	; 0x29
+     8c4:	1a a6       	std	Y+42, r1	; 0x2a
+     8c6:	1b a6       	std	Y+43, r1	; 0x2b
+		csw.bCSWStatus = 0x00;
+     8c8:	1c a6       	std	Y+44, r1	; 0x2c
+		WaitInToken();
+     8ca:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&csw, 13);
+     8ce:	4d e0       	ldi	r20, 0x0D	; 13
+     8d0:	50 e0       	ldi	r21, 0x00	; 0
+     8d2:	be 01       	movw	r22, r28
+     8d4:	60 5e       	subi	r22, 0xE0	; 224
+     8d6:	7f 4f       	sbci	r23, 0xFF	; 255
+     8d8:	85 e0       	ldi	r24, 0x05	; 5
+     8da:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		break;
+     8de:	e4 c1       	rjmp	.+968    	; 0xca8 <__stack+0x1a9>
+
+		case READ_FORMAT_CAPACITY:
+		debug_send("@160");
+     8e0:	85 e4       	ldi	r24, 0x45	; 69
+     8e2:	91 e0       	ldi	r25, 0x01	; 1
+     8e4:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     8e8:	85 e0       	ldi	r24, 0x05	; 5
+     8ea:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+
+		case READ_FORMAT_CAPACITY:
+		debug_send("@160");
+		SetEndpoint(5);
+		//Передаем структуру
+		WaitInToken();
+     8ee:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&usb_format_capacity, sizeof(usb_format_capacity));
+     8f2:	4c e0       	ldi	r20, 0x0C	; 12
+     8f4:	50 e0       	ldi	r21, 0x00	; 0
+     8f6:	61 ea       	ldi	r22, 0xA1	; 161
+     8f8:	71 e0       	ldi	r23, 0x01	; 1
+     8fa:	85 e0       	ldi	r24, 0x05	; 5
+     8fc:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		//Заполняем и передаем CSW
+		csw.dCSWDataResidue = cbw.dCBWDataTransferLength - cbw.CBWCB[4];
+     900:	2c 89       	ldd	r18, Y+20	; 0x14
+     902:	89 85       	ldd	r24, Y+9	; 0x09
+     904:	9a 85       	ldd	r25, Y+10	; 0x0a
+     906:	ab 85       	ldd	r26, Y+11	; 0x0b
+     908:	bc 85       	ldd	r27, Y+12	; 0x0c
+     90a:	82 1b       	sub	r24, r18
+     90c:	91 09       	sbc	r25, r1
+     90e:	a1 09       	sbc	r26, r1
+     910:	b1 09       	sbc	r27, r1
+     912:	88 a7       	std	Y+40, r24	; 0x28
+     914:	99 a7       	std	Y+41, r25	; 0x29
+     916:	aa a7       	std	Y+42, r26	; 0x2a
+     918:	bb a7       	std	Y+43, r27	; 0x2b
+		csw.bCSWStatus = 0x00;
+     91a:	1c a6       	std	Y+44, r1	; 0x2c
+		WaitInToken();
+     91c:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&csw, 13);
+     920:	4d e0       	ldi	r20, 0x0D	; 13
+     922:	50 e0       	ldi	r21, 0x00	; 0
+     924:	be 01       	movw	r22, r28
+     926:	60 5e       	subi	r22, 0xE0	; 224
+     928:	7f 4f       	sbci	r23, 0xFF	; 255
+     92a:	85 e0       	ldi	r24, 0x05	; 5
+     92c:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		break;
+     930:	bb c1       	rjmp	.+886    	; 0xca8 <__stack+0x1a9>
+
+		case MODE_SENSE:
+		debug_send("@140");
+     932:	8a e4       	ldi	r24, 0x4A	; 74
+     934:	91 e0       	ldi	r25, 0x01	; 1
+     936:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     93a:	85 e0       	ldi	r24, 0x05	; 5
+     93c:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+
+		case MODE_SENSE:
+		debug_send("@140");
+		SetEndpoint(5);
+		//Передаем структуру
+		WaitInToken();
+     940:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&mode_sense, 4);
+     944:	44 e0       	ldi	r20, 0x04	; 4
+     946:	50 e0       	ldi	r21, 0x00	; 0
+     948:	60 e0       	ldi	r22, 0x00	; 0
+     94a:	71 e0       	ldi	r23, 0x01	; 1
+     94c:	85 e0       	ldi	r24, 0x05	; 5
+     94e:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		//Заполняем и передаем CSW
+		csw.dCSWDataResidue = cbw.dCBWDataTransferLength - cbw.CBWCB[4];
+     952:	2c 89       	ldd	r18, Y+20	; 0x14
+     954:	89 85       	ldd	r24, Y+9	; 0x09
+     956:	9a 85       	ldd	r25, Y+10	; 0x0a
+     958:	ab 85       	ldd	r26, Y+11	; 0x0b
+     95a:	bc 85       	ldd	r27, Y+12	; 0x0c
+     95c:	82 1b       	sub	r24, r18
+     95e:	91 09       	sbc	r25, r1
+     960:	a1 09       	sbc	r26, r1
+     962:	b1 09       	sbc	r27, r1
+     964:	88 a7       	std	Y+40, r24	; 0x28
+     966:	99 a7       	std	Y+41, r25	; 0x29
+     968:	aa a7       	std	Y+42, r26	; 0x2a
+     96a:	bb a7       	std	Y+43, r27	; 0x2b
+		csw.bCSWStatus = 0x00;
+     96c:	1c a6       	std	Y+44, r1	; 0x2c
+		WaitInToken();
+     96e:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&csw, 13);
+     972:	4d e0       	ldi	r20, 0x0D	; 13
+     974:	50 e0       	ldi	r21, 0x00	; 0
+     976:	be 01       	movw	r22, r28
+     978:	60 5e       	subi	r22, 0xE0	; 224
+     97a:	7f 4f       	sbci	r23, 0xFF	; 255
+     97c:	85 e0       	ldi	r24, 0x05	; 5
+     97e:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		break;
+     982:	92 c1       	rjmp	.+804    	; 0xca8 <__stack+0x1a9>
+
+		case TEST_UNIT_READY: // device is ready
+		debug_send("@150");
+     984:	8f e4       	ldi	r24, 0x4F	; 79
+     986:	91 e0       	ldi	r25, 0x01	; 1
+     988:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     98c:	85 e0       	ldi	r24, 0x05	; 5
+     98e:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+		break;
+
+		case TEST_UNIT_READY: // device is ready
+		debug_send("@150");
+		SetEndpoint(5);
+		csw.dCSWDataResidue = cbw.dCBWDataTransferLength;
+     992:	89 85       	ldd	r24, Y+9	; 0x09
+     994:	9a 85       	ldd	r25, Y+10	; 0x0a
+     996:	ab 85       	ldd	r26, Y+11	; 0x0b
+     998:	bc 85       	ldd	r27, Y+12	; 0x0c
+     99a:	88 a7       	std	Y+40, r24	; 0x28
+     99c:	99 a7       	std	Y+41, r25	; 0x29
+     99e:	aa a7       	std	Y+42, r26	; 0x2a
+     9a0:	bb a7       	std	Y+43, r27	; 0x2b
+		csw.bCSWStatus = 0x00;
+     9a2:	1c a6       	std	Y+44, r1	; 0x2c
+		WaitInToken();
+     9a4:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&csw, 13);
+     9a8:	4d e0       	ldi	r20, 0x0D	; 13
+     9aa:	50 e0       	ldi	r21, 0x00	; 0
+     9ac:	be 01       	movw	r22, r28
+     9ae:	60 5e       	subi	r22, 0xE0	; 224
+     9b0:	7f 4f       	sbci	r23, 0xFF	; 255
+     9b2:	85 e0       	ldi	r24, 0x05	; 5
+     9b4:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		break;
+     9b8:	77 c1       	rjmp	.+750    	; 0xca8 <__stack+0x1a9>
+
+		case READ_10:{
+		debug_send("@200");
+     9ba:	84 e5       	ldi	r24, 0x54	; 84
+     9bc:	91 e0       	ldi	r25, 0x01	; 1
+     9be:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     9c2:	85 e0       	ldi	r24, 0x05	; 5
+     9c4:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+		case READ_10:{
+		debug_send("@200");
+		SetEndpoint(5);
+
+		//записываем в I начальный адрес читаемого блока
+		i = ((cbw.CBWCB[2] << 24) | (cbw.CBWCB[3] << 16) | (cbw.CBWCB[4] << 8) | (cbw.CBWCB[5]));
+     9c8:	8c 88       	ldd	r8, Y+20	; 0x14
+     9ca:	91 2c       	mov	r9, r1
+     9cc:	98 2c       	mov	r9, r8
+     9ce:	88 24       	eor	r8, r8
+     9d0:	8d 89       	ldd	r24, Y+21	; 0x15
+     9d2:	88 2a       	or	r8, r24
+     9d4:	09 2c       	mov	r0, r9
+     9d6:	00 0c       	add	r0, r0
+     9d8:	aa 08       	sbc	r10, r10
+     9da:	bb 08       	sbc	r11, r11
+		//записываем в n адрес последнего читаемого блока
+		n = ((cbw.CBWCB[7] << 8) | cbw.CBWCB[8]);
+     9dc:	4f 88       	ldd	r4, Y+23	; 0x17
+     9de:	51 2c       	mov	r5, r1
+     9e0:	54 2c       	mov	r5, r4
+     9e2:	44 24       	eor	r4, r4
+     9e4:	88 8d       	ldd	r24, Y+24	; 0x18
+     9e6:	48 2a       	or	r4, r24
+		debug_send("$");
+		debug_byte(cbw.CBWCB[7]);
+		debug_byte(cbw.CBWCB[8]);
+		debug_send("]");*/
+		char buff[512];
+		for ( ; n-- > 0 ; i++)
+     9e8:	14 14       	cp	r1, r4
+     9ea:	15 04       	cpc	r1, r5
+     9ec:	0c f0       	brlt	.+2      	; 0x9f0 <_Z12SCSI_Executev+0x2d6>
+     9ee:	4e c0       	rjmp	.+156    	; 0xa8c <_Z12SCSI_Executev+0x372>
+     9f0:	05 2c       	mov	r0, r5
+     9f2:	00 0c       	add	r0, r0
+     9f4:	66 08       	sbc	r6, r6
+     9f6:	77 08       	sbc	r7, r7
+     9f8:	48 0c       	add	r4, r8
+     9fa:	59 1c       	adc	r5, r9
+     9fc:	6a 1c       	adc	r6, r10
+     9fe:	7b 1c       	adc	r7, r11
+     a00:	7e 01       	movw	r14, r28
+     a02:	f3 ed       	ldi	r31, 0xD3	; 211
+     a04:	ef 1a       	sub	r14, r31
+     a06:	fd ef       	ldi	r31, 0xFD	; 253
+     a08:	ff 0a       	sbc	r15, r31
+			unsigned int t, retry=0;
+			uchar status;
+
+			///CDC_Send_Data("Read", 4);
+
+			response = SD_sendCommand(READ_SINGLE_BLOCK, i, false); //read a Block command
+     a0a:	20 e0       	ldi	r18, 0x00	; 0
+     a0c:	b5 01       	movw	r22, r10
+     a0e:	a4 01       	movw	r20, r8
+     a10:	81 e1       	ldi	r24, 0x11	; 17
+     a12:	0e 94 c6 07 	call	0xf8c	; 0xf8c <_Z14SD_sendCommandhmb>
+			
+			if(response != 0x00) return ; //check for SD status: 0x00 - OK (No flags set)
+     a16:	81 11       	cpse	r24, r1
+     a18:	47 c1       	rjmp	.+654    	; 0xca8 <__stack+0x1a9>
+			///CDC_Send_Data("Init", 4);
+			SD_CS_ASSERT;
+     a1a:	2c 98       	cbi	0x05, 4	; 5
+     a1c:	00 e0       	ldi	r16, 0x00	; 0
+     a1e:	10 e1       	ldi	r17, 0x10	; 16
+
+			retry = 0;
+			while((status=sspi_recv()) != 0xfe) //wait for start block token 0xfe (0x11111110)
+     a20:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+     a24:	8e 3f       	cpi	r24, 0xFE	; 254
+     a26:	29 f0       	breq	.+10     	; 0xa32 <_Z12SCSI_Executev+0x318>
+     a28:	01 50       	subi	r16, 0x01	; 1
+     a2a:	11 09       	sbc	r17, r1
+			if(retry++ > 0xffe){SD_CS_DEASSERT; return;} //return if time-out
+     a2c:	c9 f7       	brne	.-14     	; 0xa20 <_Z12SCSI_Executev+0x306>
+     a2e:	2c 9a       	sbi	0x05, 4	; 5
+     a30:	3b c1       	rjmp	.+630    	; 0xca8 <__stack+0x1a9>
+     a32:	6e 01       	movw	r12, r28
+     a34:	2d e2       	ldi	r18, 0x2D	; 45
+     a36:	c2 0e       	add	r12, r18
+     a38:	d1 1c       	adc	r13, r1
+			if(response != 0x00) return ; //check for SD status: 0x00 - OK (No flags set)
+			///CDC_Send_Data("Init", 4);
+			SD_CS_ASSERT;
+
+			retry = 0;
+			while((status=sspi_recv()) != 0xfe) //wait for start block token 0xfe (0x11111110)
+     a3a:	86 01       	movw	r16, r12
+			///CDC_Send_Byte(status);
+			///CDC_Send_Data("start", 5);
+
+			for (t = 0; t < 512; t++){ //read 512 bytes
+				//Передаем часть буфера
+				buff[t]=sspi_recv();
+     a3c:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+     a40:	d8 01       	movw	r26, r16
+     a42:	8d 93       	st	X+, r24
+     a44:	8d 01       	movw	r16, r26
+			while((status=sspi_recv()) != 0xfe) //wait for start block token 0xfe (0x11111110)
+			if(retry++ > 0xffe){SD_CS_DEASSERT; return;} //return if time-out
+			///CDC_Send_Byte(status);
+			///CDC_Send_Data("start", 5);
+
+			for (t = 0; t < 512; t++){ //read 512 bytes
+     a46:	ae 15       	cp	r26, r14
+     a48:	bf 05       	cpc	r27, r15
+     a4a:	c1 f7       	brne	.-16     	; 0xa3c <_Z12SCSI_Executev+0x322>
+				//Передаем часть буфера
+				buff[t]=sspi_recv();
+			}
+
+			sspi_recv(); //receive incoming CRC (16-bit), CRC is ignored here
+     a4c:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+			sspi_recv();
+     a50:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+
+			sspi_recv(); //extra 8 clock pulses
+     a54:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+			SD_CS_DEASSERT;
+     a58:	2c 9a       	sbi	0x05, 4	; 5
+
+
+			//Так как размер конечной точки 64 байта, передаем 512 байт за 8 раз
+			for (j = 0; j < 8; j++)
+			{
+				WaitInToken();
+     a5a:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+				SendUsb(5, (char *)&buff[j*64], 64);
+     a5e:	40 e4       	ldi	r20, 0x40	; 64
+     a60:	50 e0       	ldi	r21, 0x00	; 0
+     a62:	b6 01       	movw	r22, r12
+     a64:	85 e0       	ldi	r24, 0x05	; 5
+     a66:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+     a6a:	b0 e4       	ldi	r27, 0x40	; 64
+     a6c:	cb 0e       	add	r12, r27
+     a6e:	d1 1c       	adc	r13, r1
+			sspi_recv(); //extra 8 clock pulses
+			SD_CS_DEASSERT;
+
+
+			//Так как размер конечной точки 64 байта, передаем 512 байт за 8 раз
+			for (j = 0; j < 8; j++)
+     a70:	ec 14       	cp	r14, r12
+     a72:	fd 04       	cpc	r15, r13
+     a74:	91 f7       	brne	.-28     	; 0xa5a <_Z12SCSI_Executev+0x340>
+		debug_send("$");
+		debug_byte(cbw.CBWCB[7]);
+		debug_byte(cbw.CBWCB[8]);
+		debug_send("]");*/
+		char buff[512];
+		for ( ; n-- > 0 ; i++)
+     a76:	ef ef       	ldi	r30, 0xFF	; 255
+     a78:	8e 1a       	sub	r8, r30
+     a7a:	9e 0a       	sbc	r9, r30
+     a7c:	ae 0a       	sbc	r10, r30
+     a7e:	be 0a       	sbc	r11, r30
+     a80:	84 14       	cp	r8, r4
+     a82:	95 04       	cpc	r9, r5
+     a84:	a6 04       	cpc	r10, r6
+     a86:	b7 04       	cpc	r11, r7
+     a88:	09 f0       	breq	.+2      	; 0xa8c <_Z12SCSI_Executev+0x372>
+     a8a:	bf cf       	rjmp	.-130    	; 0xa0a <_Z12SCSI_Executev+0x2f0>
+				WaitInToken();
+				SendUsb(5, (char *)&buff[j*64], 64);
+		
+			}
+		}
+		UEINTX = 0x3A;	// FIFOCON=0 NAKINI=0 RWAL=1 NAKOUTI=1 RXSTPI=1 RXOUTI=0 STALLEDI=1 TXINI=0
+     a8c:	8a e3       	ldi	r24, 0x3A	; 58
+     a8e:	80 93 e8 00 	sts	0x00E8, r24	; 0x8000e8 <__DATA_REGION_ORIGIN__+0x88>
+
+		csw.dCSWDataResidue = cbw.dCBWDataTransferLength - cbw.CBWCB[4];
+     a92:	2c 89       	ldd	r18, Y+20	; 0x14
+     a94:	89 85       	ldd	r24, Y+9	; 0x09
+     a96:	9a 85       	ldd	r25, Y+10	; 0x0a
+     a98:	ab 85       	ldd	r26, Y+11	; 0x0b
+     a9a:	bc 85       	ldd	r27, Y+12	; 0x0c
+     a9c:	82 1b       	sub	r24, r18
+     a9e:	91 09       	sbc	r25, r1
+     aa0:	a1 09       	sbc	r26, r1
+     aa2:	b1 09       	sbc	r27, r1
+     aa4:	88 a7       	std	Y+40, r24	; 0x28
+     aa6:	99 a7       	std	Y+41, r25	; 0x29
+     aa8:	aa a7       	std	Y+42, r26	; 0x2a
+     aaa:	bb a7       	std	Y+43, r27	; 0x2b
+		csw.bCSWStatus = 0x00;
+     aac:	1c a6       	std	Y+44, r1	; 0x2c
+		WaitInToken();
+     aae:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&csw, 13);
+     ab2:	4d e0       	ldi	r20, 0x0D	; 13
+     ab4:	50 e0       	ldi	r21, 0x00	; 0
+     ab6:	be 01       	movw	r22, r28
+     ab8:	60 5e       	subi	r22, 0xE0	; 224
+     aba:	7f 4f       	sbci	r23, 0xFF	; 255
+     abc:	85 e0       	ldi	r24, 0x05	; 5
+     abe:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		debug_send("@222");
+     ac2:	89 e5       	ldi	r24, 0x59	; 89
+     ac4:	91 e0       	ldi	r25, 0x01	; 1
+     ac6:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+		}break;
+     aca:	ee c0       	rjmp	.+476    	; 0xca8 <__stack+0x1a9>
+
+
+		case WRITE_10:{
+		debug_send("@300");
+     acc:	8e e5       	ldi	r24, 0x5E	; 94
+     ace:	91 e0       	ldi	r25, 0x01	; 1
+     ad0:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     ad4:	84 e0       	ldi	r24, 0x04	; 4
+     ad6:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+		debug_send("@300");
+
+		SetEndpoint(4);
+
+		//записываем в I начальный адрес читаемого блока
+		i = ((cbw.CBWCB[2] << 24) | (cbw.CBWCB[3] << 16) | (cbw.CBWCB[4] << 8) | (cbw.CBWCB[5]));
+     ada:	8c 88       	ldd	r8, Y+20	; 0x14
+     adc:	91 2c       	mov	r9, r1
+     ade:	98 2c       	mov	r9, r8
+     ae0:	88 24       	eor	r8, r8
+     ae2:	8d 89       	ldd	r24, Y+21	; 0x15
+     ae4:	88 2a       	or	r8, r24
+     ae6:	09 2c       	mov	r0, r9
+     ae8:	00 0c       	add	r0, r0
+     aea:	aa 08       	sbc	r10, r10
+     aec:	bb 08       	sbc	r11, r11
+		//записываем в n адрес последнего читаемого блока
+		n = ((cbw.CBWCB[7] << 8) | cbw.CBWCB[8]);
+
+		char buff[512];
+		debug_send("@3001");
+     aee:	83 e6       	ldi	r24, 0x63	; 99
+     af0:	91 e0       	ldi	r25, 0x01	; 1
+     af2:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+     af6:	8e 01       	movw	r16, r28
+     af8:	03 5d       	subi	r16, 0xD3	; 211
+     afa:	1f 4f       	sbci	r17, 0xFF	; 255
+     afc:	7e 01       	movw	r14, r28
+     afe:	f3 ed       	ldi	r31, 0xD3	; 211
+     b00:	ef 1a       	sub	r14, r31
+     b02:	fd ef       	ldi	r31, 0xFD	; 253
+     b04:	ff 0a       	sbc	r15, r31
+     b06:	68 01       	movw	r12, r16
+		for (j = 0; j < 8; j++)
+		{debug_send("@3002");
+     b08:	89 e6       	ldi	r24, 0x69	; 105
+     b0a:	91 e0       	ldi	r25, 0x01	; 1
+     b0c:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+			WaitOutToken();
+     b10:	0e 94 62 01 	call	0x2c4	; 0x2c4 <_Z12WaitOutTokenv>
+			ReadData((char*)(buff + j * 64), 64);
+     b14:	60 e4       	ldi	r22, 0x40	; 64
+     b16:	c6 01       	movw	r24, r12
+     b18:	0e 94 4e 01 	call	0x29c	; 0x29c <_Z8ReadDataPVcc>
+			debug_send("@3003");
+     b1c:	8f e6       	ldi	r24, 0x6F	; 111
+     b1e:	91 e0       	ldi	r25, 0x01	; 1
+     b20:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+     b24:	20 e4       	ldi	r18, 0x40	; 64
+     b26:	c2 0e       	add	r12, r18
+     b28:	d1 1c       	adc	r13, r1
+		//записываем в n адрес последнего читаемого блока
+		n = ((cbw.CBWCB[7] << 8) | cbw.CBWCB[8]);
+
+		char buff[512];
+		debug_send("@3001");
+		for (j = 0; j < 8; j++)
+     b2a:	ec 14       	cp	r14, r12
+     b2c:	fd 04       	cpc	r15, r13
+     b2e:	61 f7       	brne	.-40     	; 0xb08 <__stack+0x9>
+		}
+
+		unsigned char response;
+		unsigned int t, retry=0;
+
+		response = SD_sendCommand(WRITE_SINGLE_BLOCK, i, false); //write a Block command
+     b30:	20 e0       	ldi	r18, 0x00	; 0
+     b32:	b5 01       	movw	r22, r10
+     b34:	a4 01       	movw	r20, r8
+     b36:	88 e1       	ldi	r24, 0x18	; 24
+     b38:	0e 94 c6 07 	call	0xf8c	; 0xf8c <_Z14SD_sendCommandhmb>
+		
+		if(response != 0x00){
+     b3c:	88 23       	and	r24, r24
+     b3e:	29 f0       	breq	.+10     	; 0xb4a <__stack+0x4b>
+		debug_send("@304");
+     b40:	85 e7       	ldi	r24, 0x75	; 117
+     b42:	91 e0       	ldi	r25, 0x01	; 1
+     b44:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+		return; //check for SD status: 0x00 - OK (No flags set)
+     b48:	af c0       	rjmp	.+350    	; 0xca8 <__stack+0x1a9>
+		}
+
+		SD_CS_ASSERT;
+     b4a:	2c 98       	cbi	0x05, 4	; 5
+
+		sspi_send(0xfe);     //Send start block token 0xfe (0x11111110)
+     b4c:	8e ef       	ldi	r24, 0xFE	; 254
+     b4e:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+
+		for(t=0; t<512; t++)    //send 512 bytes data
+		sspi_send(buff[t]);
+     b52:	d8 01       	movw	r26, r16
+     b54:	8d 91       	ld	r24, X+
+     b56:	8d 01       	movw	r16, r26
+     b58:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+
+		SD_CS_ASSERT;
+
+		sspi_send(0xfe);     //Send start block token 0xfe (0x11111110)
+
+		for(t=0; t<512; t++)    //send 512 bytes data
+     b5c:	e0 16       	cp	r14, r16
+     b5e:	f1 06       	cpc	r15, r17
+     b60:	c1 f7       	brne	.-16     	; 0xb52 <__stack+0x53>
+		sspi_send(buff[t]);
+
+		sspi_send(0xff);     //transmit dummy CRC (16-bit), CRC is ignored here
+     b62:	8f ef       	ldi	r24, 0xFF	; 255
+     b64:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+		sspi_send(0xff);
+     b68:	8f ef       	ldi	r24, 0xFF	; 255
+     b6a:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+
+		response = sspi_recv();
+     b6e:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+
+		if( (response & 0x1f) != 0x05) //response= 0xXXX0AAA1 ; AAA='010' - data accepted
+     b72:	8f 71       	andi	r24, 0x1F	; 31
+     b74:	85 30       	cpi	r24, 0x05	; 5
+     b76:	31 f0       	breq	.+12     	; 0xb84 <__stack+0x85>
+		{                              //AAA='101'-data rejected due to CRC error
+			SD_CS_DEASSERT;              //AAA='110'-data rejected due to write error
+     b78:	2c 9a       	sbi	0x05, 4	; 5
+			debug_send("@301");
+     b7a:	8a e7       	ldi	r24, 0x7A	; 122
+     b7c:	91 e0       	ldi	r25, 0x01	; 1
+     b7e:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+			return;
+     b82:	92 c0       	rjmp	.+292    	; 0xca8 <__stack+0x1a9>
+     b84:	00 e0       	ldi	r16, 0x00	; 0
+     b86:	10 e0       	ldi	r17, 0x00	; 0
+		}
+
+		while(!sspi_recv()) //wait for SD card to complete writing and get idle
+     b88:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+     b8c:	81 11       	cpse	r24, r1
+     b8e:	09 c0       	rjmp	.+18     	; 0xba2 <__stack+0xa3>
+		if(retry++ > 0xfffe)
+     b90:	0f 5f       	subi	r16, 0xFF	; 255
+     b92:	1f 4f       	sbci	r17, 0xFF	; 255
+     b94:	c9 f7       	brne	.-14     	; 0xb88 <__stack+0x89>
+		{
+			SD_CS_DEASSERT;
+     b96:	2c 9a       	sbi	0x05, 4	; 5
+			debug_send("@302");
+     b98:	8f e7       	ldi	r24, 0x7F	; 127
+     b9a:	91 e0       	ldi	r25, 0x01	; 1
+     b9c:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+			return;
+     ba0:	83 c0       	rjmp	.+262    	; 0xca8 <__stack+0x1a9>
+		}
+
+		SD_CS_DEASSERT;
+     ba2:	2c 9a       	sbi	0x05, 4	; 5
+		sspi_send(0xff);   //just spend 8 clock cycle delay before reasserting the CS line
+     ba4:	8f ef       	ldi	r24, 0xFF	; 255
+     ba6:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+		SD_CS_ASSERT;         //re-asserting the CS line to verify if card is still busy
+     baa:	2c 98       	cbi	0x05, 4	; 5
+     bac:	01 c0       	rjmp	.+2      	; 0xbb0 <__stack+0xb1>
+
+		while(!sspi_recv()) //wait for SD card to complete writing and get idle
+		if(retry++ > 0xfffe)
+     bae:	8c 01       	movw	r16, r24
+
+		SD_CS_DEASSERT;
+		sspi_send(0xff);   //just spend 8 clock cycle delay before reasserting the CS line
+		SD_CS_ASSERT;         //re-asserting the CS line to verify if card is still busy
+
+		while(!sspi_recv()) //wait for SD card to complete writing and get idle
+     bb0:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+     bb4:	81 11       	cpse	r24, r1
+     bb6:	0b c0       	rjmp	.+22     	; 0xbce <__stack+0xcf>
+		if(retry++ > 0xfffe)
+     bb8:	c8 01       	movw	r24, r16
+     bba:	01 96       	adiw	r24, 0x01	; 1
+     bbc:	0f 3f       	cpi	r16, 0xFF	; 255
+     bbe:	1f 4f       	sbci	r17, 0xFF	; 255
+     bc0:	b1 f7       	brne	.-20     	; 0xbae <__stack+0xaf>
+		{
+			SD_CS_DEASSERT;
+     bc2:	2c 9a       	sbi	0x05, 4	; 5
+			debug_send("@303");
+     bc4:	84 e8       	ldi	r24, 0x84	; 132
+     bc6:	91 e0       	ldi	r25, 0x01	; 1
+     bc8:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+			return ;
+     bcc:	6d c0       	rjmp	.+218    	; 0xca8 <__stack+0x1a9>
+		}
+		SD_CS_DEASSERT;
+     bce:	2c 9a       	sbi	0x05, 4	; 5
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     bd0:	85 e0       	ldi	r24, 0x05	; 5
+     bd2:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+		}
+		SD_CS_DEASSERT;
+
+		SetEndpoint(5);
+
+		csw.dCSWDataResidue = cbw.dCBWDataTransferLength - cbw.CBWCB[4];
+     bd6:	2c 89       	ldd	r18, Y+20	; 0x14
+     bd8:	89 85       	ldd	r24, Y+9	; 0x09
+     bda:	9a 85       	ldd	r25, Y+10	; 0x0a
+     bdc:	ab 85       	ldd	r26, Y+11	; 0x0b
+     bde:	bc 85       	ldd	r27, Y+12	; 0x0c
+     be0:	82 1b       	sub	r24, r18
+     be2:	91 09       	sbc	r25, r1
+     be4:	a1 09       	sbc	r26, r1
+     be6:	b1 09       	sbc	r27, r1
+     be8:	88 a7       	std	Y+40, r24	; 0x28
+     bea:	99 a7       	std	Y+41, r25	; 0x29
+     bec:	aa a7       	std	Y+42, r26	; 0x2a
+     bee:	bb a7       	std	Y+43, r27	; 0x2b
+		csw.bCSWStatus = 0x00;
+     bf0:	1c a6       	std	Y+44, r1	; 0x2c
+		WaitInToken();
+     bf2:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&csw, 13);
+     bf6:	4d e0       	ldi	r20, 0x0D	; 13
+     bf8:	50 e0       	ldi	r21, 0x00	; 0
+     bfa:	be 01       	movw	r22, r28
+     bfc:	60 5e       	subi	r22, 0xE0	; 224
+     bfe:	7f 4f       	sbci	r23, 0xFF	; 255
+     c00:	85 e0       	ldi	r24, 0x05	; 5
+     c02:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		debug_send("@333");
+     c06:	89 e8       	ldi	r24, 0x89	; 137
+     c08:	91 e0       	ldi	r25, 0x01	; 1
+     c0a:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+
+		}break;
+     c0e:	4c c0       	rjmp	.+152    	; 0xca8 <__stack+0x1a9>
+
+
+
+		case REQUEST_SENSE:
+		debug_send("@130");
+     c10:	8e e8       	ldi	r24, 0x8E	; 142
+     c12:	91 e0       	ldi	r25, 0x01	; 1
+     c14:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     c18:	85 e0       	ldi	r24, 0x05	; 5
+     c1a:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+
+		case REQUEST_SENSE:
+		debug_send("@130");
+		SetEndpoint(5);
+		//Отправляем пояснительные данные
+		WaitInToken();
+     c1e:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&sense_data, 18);
+     c22:	42 e1       	ldi	r20, 0x12	; 18
+     c24:	50 e0       	ldi	r21, 0x00	; 0
+     c26:	6c e0       	ldi	r22, 0x0C	; 12
+     c28:	71 e0       	ldi	r23, 0x01	; 1
+     c2a:	85 e0       	ldi	r24, 0x05	; 5
+     c2c:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		//Заполняем поля CSW
+		csw.dCSWDataResidue = cbw.dCBWDataTransferLength - cbw.CBWCB[4];
+     c30:	2c 89       	ldd	r18, Y+20	; 0x14
+     c32:	89 85       	ldd	r24, Y+9	; 0x09
+     c34:	9a 85       	ldd	r25, Y+10	; 0x0a
+     c36:	ab 85       	ldd	r26, Y+11	; 0x0b
+     c38:	bc 85       	ldd	r27, Y+12	; 0x0c
+     c3a:	82 1b       	sub	r24, r18
+     c3c:	91 09       	sbc	r25, r1
+     c3e:	a1 09       	sbc	r26, r1
+     c40:	b1 09       	sbc	r27, r1
+     c42:	88 a7       	std	Y+40, r24	; 0x28
+     c44:	99 a7       	std	Y+41, r25	; 0x29
+     c46:	aa a7       	std	Y+42, r26	; 0x2a
+     c48:	bb a7       	std	Y+43, r27	; 0x2b
+		//Команда выполнилась успешно
+		csw.bCSWStatus = 0x00;
+     c4a:	1c a6       	std	Y+44, r1	; 0x2c
+		//Посылаем контейнер состояния
+		WaitInToken();
+     c4c:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&csw, 13);
+     c50:	4d e0       	ldi	r20, 0x0D	; 13
+     c52:	50 e0       	ldi	r21, 0x00	; 0
+     c54:	be 01       	movw	r22, r28
+     c56:	60 5e       	subi	r22, 0xE0	; 224
+     c58:	7f 4f       	sbci	r23, 0xFF	; 255
+     c5a:	85 e0       	ldi	r24, 0x05	; 5
+     c5c:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		break;
+     c60:	23 c0       	rjmp	.+70     	; 0xca8 <__stack+0x1a9>
+
+		//Неизвестная команда
+		default:
+		debug_send("@404");
+     c62:	83 e9       	ldi	r24, 0x93	; 147
+     c64:	91 e0       	ldi	r25, 0x01	; 1
+     c66:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+		//Заполняем поля CSW
+		csw.dCSWDataResidue = cbw.dCBWDataTransferLength;
+     c6a:	89 85       	ldd	r24, Y+9	; 0x09
+     c6c:	9a 85       	ldd	r25, Y+10	; 0x0a
+     c6e:	ab 85       	ldd	r26, Y+11	; 0x0b
+     c70:	bc 85       	ldd	r27, Y+12	; 0x0c
+     c72:	88 a7       	std	Y+40, r24	; 0x28
+     c74:	99 a7       	std	Y+41, r25	; 0x29
+     c76:	aa a7       	std	Y+42, r26	; 0x2a
+     c78:	bb a7       	std	Y+43, r27	; 0x2b
+		//Сообщаем об ошибке выполнения команды
+		csw.bCSWStatus = 0x01;
+     c7a:	81 e0       	ldi	r24, 0x01	; 1
+     c7c:	8c a7       	std	Y+44, r24	; 0x2c
+		//Посылаем контейнер состояния
+		WaitInToken();
+     c7e:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&csw, 13);
+     c82:	4d e0       	ldi	r20, 0x0D	; 13
+     c84:	50 e0       	ldi	r21, 0x00	; 0
+     c86:	be 01       	movw	r22, r28
+     c88:	60 5e       	subi	r22, 0xE0	; 224
+     c8a:	7f 4f       	sbci	r23, 0xFF	; 255
+     c8c:	85 e0       	ldi	r24, 0x05	; 5
+     c8e:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		//Подтверждаем
+		csw.bCSWStatus = 0x00;
+     c92:	1c a6       	std	Y+44, r1	; 0x2c
+		//Посылаем контейнер состояния
+		WaitInToken();
+     c94:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+		SendUsb(5, (char *)&csw, 13);
+     c98:	4d e0       	ldi	r20, 0x0D	; 13
+     c9a:	50 e0       	ldi	r21, 0x00	; 0
+     c9c:	be 01       	movw	r22, r28
+     c9e:	60 5e       	subi	r22, 0xE0	; 224
+     ca0:	7f 4f       	sbci	r23, 0xFF	; 255
+     ca2:	85 e0       	ldi	r24, 0x05	; 5
+     ca4:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+		break;
+	}		
+	
+}
+     ca8:	c4 5d       	subi	r28, 0xD4	; 212
+     caa:	dd 4f       	sbci	r29, 0xFD	; 253
+     cac:	0f b6       	in	r0, 0x3f	; 63
+     cae:	f8 94       	cli
+     cb0:	de bf       	out	0x3e, r29	; 62
+     cb2:	0f be       	out	0x3f, r0	; 63
+     cb4:	cd bf       	out	0x3d, r28	; 61
+     cb6:	df 91       	pop	r29
+     cb8:	cf 91       	pop	r28
+     cba:	1f 91       	pop	r17
+     cbc:	0f 91       	pop	r16
+     cbe:	ff 90       	pop	r15
+     cc0:	ef 90       	pop	r14
+     cc2:	df 90       	pop	r13
+     cc4:	cf 90       	pop	r12
+     cc6:	bf 90       	pop	r11
+     cc8:	af 90       	pop	r10
+     cca:	9f 90       	pop	r9
+     ccc:	8f 90       	pop	r8
+     cce:	7f 90       	pop	r7
+     cd0:	6f 90       	pop	r6
+     cd2:	5f 90       	pop	r5
+     cd4:	4f 90       	pop	r4
+     cd6:	08 95       	ret
+
+00000cd8 <__vector_11>:
+/*               USB Endpoint interrupt vector                          */
+/************************************************************************/
+
+
+ISR(USB_COM_vect)
+{
+     cd8:	1f 92       	push	r1
+     cda:	0f 92       	push	r0
+     cdc:	0f b6       	in	r0, 0x3f	; 63
+     cde:	0f 92       	push	r0
+     ce0:	11 24       	eor	r1, r1
+     ce2:	ef 92       	push	r14
+     ce4:	ff 92       	push	r15
+     ce6:	0f 93       	push	r16
+     ce8:	1f 93       	push	r17
+     cea:	2f 93       	push	r18
+     cec:	3f 93       	push	r19
+     cee:	4f 93       	push	r20
+     cf0:	5f 93       	push	r21
+     cf2:	6f 93       	push	r22
+     cf4:	7f 93       	push	r23
+     cf6:	8f 93       	push	r24
+     cf8:	9f 93       	push	r25
+     cfa:	af 93       	push	r26
+     cfc:	bf 93       	push	r27
+     cfe:	ef 93       	push	r30
+     d00:	ff 93       	push	r31
+     d02:	cf 93       	push	r28
+     d04:	df 93       	push	r29
+     d06:	cd b7       	in	r28, 0x3d	; 61
+     d08:	de b7       	in	r29, 0x3e	; 62
+     d0a:	28 97       	sbiw	r28, 0x08	; 8
+     d0c:	de bf       	out	0x3e, r29	; 62
+     d0e:	cd bf       	out	0x3d, r28	; 61
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     d10:	84 e0       	ldi	r24, 0x04	; 4
+     d12:	80 93 e9 00 	sts	0x00E9, r24	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+ISR(USB_COM_vect)
+{
+	bool status;
+
+	SetEndpoint(4); // mass storage class out-endpoint handler
+	if ( (UEINTX & (1 << RXOUTI)) )
+     d16:	80 91 e8 00 	lds	r24, 0x00E8	; 0x8000e8 <__DATA_REGION_ORIGIN__+0x88>
+     d1a:	82 ff       	sbrs	r24, 2
+     d1c:	03 c0       	rjmp	.+6      	; 0xd24 <__vector_11+0x4c>
+	{
+		SCSI_Execute();
+     d1e:	0e 94 8d 03 	call	0x71a	; 0x71a <_Z12SCSI_Executev>
+		return;
+     d22:	a8 c0       	rjmp	.+336    	; 0xe74 <__vector_11+0x19c>
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     d24:	10 92 e9 00 	sts	0x00E9, r1	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+
+
+	// handle ep zero
+
+	SetEndpoint(USB_EP_0);
+	if ( !ReceivedSetupInterrupt() )
+     d28:	0e 94 07 01 	call	0x20e	; 0x20e <_Z22ReceivedSetupInterruptv>
+     d2c:	88 23       	and	r24, r24
+     d2e:	09 f4       	brne	.+2      	; 0xd32 <__vector_11+0x5a>
+     d30:	a1 c0       	rjmp	.+322    	; 0xe74 <__vector_11+0x19c>
+		return;
+
+	USBSetup setup;
+	ReadData((char*)&setup,8);
+     d32:	68 e0       	ldi	r22, 0x08	; 8
+     d34:	ce 01       	movw	r24, r28
+     d36:	01 96       	adiw	r24, 0x01	; 1
+     d38:	0e 94 4e 01 	call	0x29c	; 0x29c <_Z8ReadDataPVcc>
+	return UEINTX & ( 1 << RXSTPI );
+}
+
+void ClearSetupInterrupt()
+{
+	UEINTX = ~( (1<<RXSTPI) | (1<<RXOUTI) | (1<<TXINI) );
+     d3c:	82 ef       	ldi	r24, 0xF2	; 242
+     d3e:	80 93 e8 00 	sts	0x00E8, r24	; 0x8000e8 <__DATA_REGION_ORIGIN__+0x88>
+
+	USBSetup setup;
+	ReadData((char*)&setup,8);
+	ClearSetupInterrupt();
+
+	char requestType = setup.bmRequestType;
+     d42:	19 81       	ldd	r17, Y+1	; 0x01
+	if (requestType & REQUEST_DEVICETOHOST)
+     d44:	11 23       	and	r17, r17
+     d46:	1c f4       	brge	.+6      	; 0xd4e <__vector_11+0x76>
+		WaitInToken();      //??????? ????? ???? ????? ????? ??? ?????? ?????? IN
+     d48:	0e 94 5c 01 	call	0x2b8	; 0x2b8 <_Z11WaitInTokenv>
+     d4c:	03 c0       	rjmp	.+6      	; 0xd54 <__vector_11+0x7c>
+	WAIT_EVENT(!(UEINTX & (1 << TXINI)))
+}
+
+void CleanIN()
+{
+	UEINTX = ~(1 << TXINI);
+     d4e:	8e ef       	ldi	r24, 0xFE	; 254
+     d50:	80 93 e8 00 	sts	0x00E8, r24	; 0x8000e8 <__DATA_REGION_ORIGIN__+0x88>
+	if (requestType & REQUEST_DEVICETOHOST)
+		WaitInToken();      //??????? ????? ???? ????? ????? ??? ?????? ?????? IN
+	else
+		CleanIN(); // 
+	
+	if ( REQUEST_TYPE(requestType) == REQUEST_STANDARD )
+     d54:	81 2f       	mov	r24, r17
+     d56:	80 76       	andi	r24, 0x60	; 96
+     d58:	09 f0       	breq	.+2      	; 0xd5c <__vector_11+0x84>
+     d5a:	78 c0       	rjmp	.+240    	; 0xe4c <__vector_11+0x174>
+	{
+		const char bRequest = setup.bRequest;
+		const short wValue = setup.wValueL | (setup.wValueH << 8);
+     d5c:	4b 81       	ldd	r20, Y+3	; 0x03
+     d5e:	2c 81       	ldd	r18, Y+4	; 0x04
+     d60:	84 2f       	mov	r24, r20
+     d62:	90 e0       	ldi	r25, 0x00	; 0
+     d64:	bc 01       	movw	r22, r24
+     d66:	72 2b       	or	r23, r18
+		
+		switch( bRequest )
+     d68:	ea 81       	ldd	r30, Y+2	; 0x02
+     d6a:	8e 2f       	mov	r24, r30
+     d6c:	90 e0       	ldi	r25, 0x00	; 0
+     d6e:	8a 30       	cpi	r24, 0x0A	; 10
+     d70:	91 05       	cpc	r25, r1
+     d72:	08 f0       	brcs	.+2      	; 0xd76 <__vector_11+0x9e>
+     d74:	75 c0       	rjmp	.+234    	; 0xe60 <__vector_11+0x188>
+     d76:	fc 01       	movw	r30, r24
+     d78:	ef 57       	subi	r30, 0x7F	; 127
+     d7a:	ff 4f       	sbci	r31, 0xFF	; 255
+     d7c:	0c 94 af 09 	jmp	0x135e	; 0x135e <__tablejump2__>
+		{
+			case GET_STATUS:
+			{
+				if ( requestType == (REQUEST_DEVICETOHOST | REQUEST_STANDARD | REQUEST_DEVICE) )
+     d80:	10 38       	cpi	r17, 0x80	; 128
+     d82:	39 f4       	brne	.+14     	; 0xd92 <__vector_11+0xba>
+				{
+					SendByte(USB_STATE.status);
+     d84:	80 91 3e 03 	lds	r24, 0x033E	; 0x80033e <_ZL9USB_STATE+0x3>
+	*Data++ = UEDATX;
+}
+
+void SendByte(char Byte)
+{
+	UEDATX = Byte;
+     d88:	e1 ef       	ldi	r30, 0xF1	; 241
+     d8a:	f0 e0       	ldi	r31, 0x00	; 0
+     d8c:	80 83       	st	Z, r24
+     d8e:	10 82       	st	Z, r1
+     d90:	68 c0       	rjmp	.+208    	; 0xe62 <__vector_11+0x18a>
+     d92:	e1 ef       	ldi	r30, 0xF1	; 241
+     d94:	f0 e0       	ldi	r31, 0x00	; 0
+     d96:	10 82       	st	Z, r1
+     d98:	10 82       	st	Z, r1
+     d9a:	63 c0       	rjmp	.+198    	; 0xe62 <__vector_11+0x18a>
+			
+			// ????????
+			// ???????? ??????????? ?????????? ???????????
+			case CLEAR_FEATURE:
+			{
+				if ( requestType == (REQUEST_HOSTTODEVICE_STANDARD_DEVICE) 
+     d9c:	11 11       	cpse	r17, r1
+     d9e:	61 c0       	rjmp	.+194    	; 0xe62 <__vector_11+0x18a>
+					&& (wValue == DEVICE_REMOTE_WAKEUP))
+     da0:	61 30       	cpi	r22, 0x01	; 1
+     da2:	71 05       	cpc	r23, r1
+     da4:	09 f0       	breq	.+2      	; 0xda8 <__vector_11+0xd0>
+     da6:	5d c0       	rjmp	.+186    	; 0xe62 <__vector_11+0x18a>
+				{
+					USB_STATE.feature &= ~FEATURE_REMOTE_WAKEUP_ENABLED;
+     da8:	eb e3       	ldi	r30, 0x3B	; 59
+     daa:	f3 e0       	ldi	r31, 0x03	; 3
+     dac:	80 81       	ld	r24, Z
+     dae:	8d 7f       	andi	r24, 0xFD	; 253
+     db0:	80 83       	st	Z, r24
+     db2:	57 c0       	rjmp	.+174    	; 0xe62 <__vector_11+0x18a>
+				break;
+			}
+			
+			case SET_FEATURE:
+			{
+				if ( requestType == REQUEST_HOSTTODEVICE_STANDARD_DEVICE
+     db4:	11 11       	cpse	r17, r1
+     db6:	55 c0       	rjmp	.+170    	; 0xe62 <__vector_11+0x18a>
+				&& (wValue == DEVICE_REMOTE_WAKEUP))
+     db8:	61 30       	cpi	r22, 0x01	; 1
+     dba:	71 05       	cpc	r23, r1
+     dbc:	09 f0       	breq	.+2      	; 0xdc0 <__vector_11+0xe8>
+     dbe:	51 c0       	rjmp	.+162    	; 0xe62 <__vector_11+0x18a>
+				{
+					USB_STATE.feature |= FEATURE_REMOTE_WAKEUP_ENABLED;
+     dc0:	eb e3       	ldi	r30, 0x3B	; 59
+     dc2:	f3 e0       	ldi	r31, 0x03	; 3
+     dc4:	80 81       	ld	r24, Z
+     dc6:	82 60       	ori	r24, 0x02	; 2
+     dc8:	80 83       	st	Z, r24
+     dca:	4b c0       	rjmp	.+150    	; 0xe62 <__vector_11+0x18a>
+				break;
+			}
+			
+			case SET_ADDRESS:
+			{
+				WAIT_EVENT( !(UEINTX & (1 << TXINI)) )
+     dcc:	e8 ee       	ldi	r30, 0xE8	; 232
+     dce:	f0 e0       	ldi	r31, 0x00	; 0
+     dd0:	80 81       	ld	r24, Z
+     dd2:	80 ff       	sbrs	r24, 0
+     dd4:	fd cf       	rjmp	.-6      	; 0xdd0 <__vector_11+0xf8>
+				UDADDR = setup.wValueL | (1<<ADDEN);
+     dd6:	40 68       	ori	r20, 0x80	; 128
+     dd8:	40 93 e3 00 	sts	0x00E3, r20	; 0x8000e3 <__DATA_REGION_ORIGIN__+0x83>
+				break;
+     ddc:	42 c0       	rjmp	.+132    	; 0xe62 <__vector_11+0x18a>
+			}
+			
+			case GET_DESCRIPTOR:
+			{
+				status = SendDescriptor(&setup);
+     dde:	ce 01       	movw	r24, r28
+     de0:	01 96       	adiw	r24, 0x01	; 1
+     de2:	0e 94 cf 01 	call	0x39e	; 0x39e <_Z14SendDescriptorP8USBSetup>
+     de6:	08 2f       	mov	r16, r24
+				break;
+     de8:	3c c0       	rjmp	.+120    	; 0xe62 <__vector_11+0x18a>
+			}
+			
+			// ??????? ???????????? (?? ?????)
+			case GET_CONFIGURATION:
+			{
+				const char DevConf = USB_STATE.configuration;
+     dea:	80 91 3d 03 	lds	r24, 0x033D	; 0x80033d <_ZL9USB_STATE+0x2>
+	*Data++ = UEDATX;
+}
+
+void SendByte(char Byte)
+{
+	UEDATX = Byte;
+     dee:	80 93 f1 00 	sts	0x00F1, r24	; 0x8000f1 <__DATA_REGION_ORIGIN__+0x91>
+     df2:	37 c0       	rjmp	.+110    	; 0xe62 <__vector_11+0x18a>
+			}
+			
+			// ????????? ??????? ????????????....
+			case SET_CONFIGURATION:
+			{
+				if ( REQUEST_DEVICE == REQUEST_RECIPIENT(requestType) )
+     df4:	1f 71       	andi	r17, 0x1F	; 31
+     df6:	b9 f5       	brne	.+110    	; 0xe66 <__vector_11+0x18e>
+     df8:	61 ec       	ldi	r22, 0xC1	; 193
+     dfa:	11 e0       	ldi	r17, 0x01	; 1
+				{
+					//initEndpoints ...
+					for(char i = 1; _initEndpoints[i] != 0; ++i)
+						if ( InitializeEndpoint(i, _initEndpoints[i], USB_EP_MEM_64_SINGLE) )
+						{
+							UEIENX |= (1 << RXOUTE);
+     dfc:	0f 2e       	mov	r0, r31
+     dfe:	f0 ef       	ldi	r31, 0xF0	; 240
+     e00:	ef 2e       	mov	r14, r31
+     e02:	f1 2c       	mov	r15, r1
+     e04:	f0 2d       	mov	r31, r0
+			{
+				if ( REQUEST_DEVICE == REQUEST_RECIPIENT(requestType) )
+				{
+					//initEndpoints ...
+					for(char i = 1; _initEndpoints[i] != 0; ++i)
+						if ( InitializeEndpoint(i, _initEndpoints[i], USB_EP_MEM_64_SINGLE) )
+     e06:	42 e3       	ldi	r20, 0x32	; 50
+     e08:	81 2f       	mov	r24, r17
+     e0a:	0e 94 0d 01 	call	0x21a	; 0x21a <_Z18InitializeEndpointccc>
+     e0e:	88 23       	and	r24, r24
+     e10:	79 f0       	breq	.+30     	; 0xe30 <__vector_11+0x158>
+						{
+							UEIENX |= (1 << RXOUTE);
+     e12:	f7 01       	movw	r30, r14
+     e14:	80 81       	ld	r24, Z
+     e16:	84 60       	ori	r24, 0x04	; 4
+     e18:	80 83       	st	Z, r24
+							//UEIENX |= (1 << TXINE);
+							debug_send("EP");
+     e1a:	88 e9       	ldi	r24, 0x98	; 152
+     e1c:	91 e0       	ldi	r25, 0x01	; 1
+     e1e:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+							debug_byte(i);
+     e22:	81 2f       	mov	r24, r17
+     e24:	0e 94 8b 09 	call	0x1316	; 0x1316 <_Z10debug_byteh>
+							debug_send("init;");
+     e28:	8b e9       	ldi	r24, 0x9B	; 155
+     e2a:	91 e0       	ldi	r25, 0x01	; 1
+     e2c:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+			case SET_CONFIGURATION:
+			{
+				if ( REQUEST_DEVICE == REQUEST_RECIPIENT(requestType) )
+				{
+					//initEndpoints ...
+					for(char i = 1; _initEndpoints[i] != 0; ++i)
+     e30:	1f 5f       	subi	r17, 0xFF	; 255
+     e32:	e1 2f       	mov	r30, r17
+     e34:	f0 e0       	ldi	r31, 0x00	; 0
+     e36:	ef 52       	subi	r30, 0x2F	; 47
+     e38:	fe 4f       	sbci	r31, 0xFE	; 254
+     e3a:	60 81       	ld	r22, Z
+     e3c:	61 11       	cpse	r22, r1
+     e3e:	e3 cf       	rjmp	.-58     	; 0xe06 <__vector_11+0x12e>
+
+	return UESTA0X & (1 << CFGOK);
+}
+
+void SetEndpoint(char Index){
+	UENUM = Index; // ????? ???????? ?????
+     e40:	10 92 e9 00 	sts	0x00E9, r1	; 0x8000e9 <__DATA_REGION_ORIGIN__+0x89>
+
+					
+					
+					// USB_STATE.configuration = setup.wValueL;
+					SetEndpoint(USB_EP_0);
+					USB_STATE.configuration = 1;
+     e44:	81 e0       	ldi	r24, 0x01	; 1
+     e46:	80 93 3d 03 	sts	0x033D, r24	; 0x80033d <_ZL9USB_STATE+0x2>
+     e4a:	0b c0       	rjmp	.+22     	; 0xe62 <__vector_11+0x18a>
+		}// end switch
+		
+	}
+	else // either vendor or class request ...
+	{
+		InitControlTransfer(setup.wLength);
+     e4c:	8f 81       	ldd	r24, Y+7	; 0x07
+     e4e:	98 85       	ldd	r25, Y+8	; 0x08
+     e50:	0e 94 75 01 	call	0x2ea	; 0x2ea <_Z19InitControlTransfers>
+		
+		status = ClassControlRequest(&setup);
+     e54:	ce 01       	movw	r24, r28
+     e56:	01 96       	adiw	r24, 0x01	; 1
+     e58:	0e 94 83 02 	call	0x506	; 0x506 <_Z19ClassControlRequestP8USBSetup>
+     e5c:	08 2f       	mov	r16, r24
+     e5e:	01 c0       	rjmp	.+2      	; 0xe62 <__vector_11+0x18a>
+				break;
+			}
+			
+			case SET_DESCRIPTOR:
+			{
+				status = false; // ???-?? ?????????????
+     e60:	00 e0       	ldi	r16, 0x00	; 0
+		
+		status = ClassControlRequest(&setup);
+	}
+	
+	
+	if  ( !status ){ 
+     e62:	01 11       	cpse	r16, r1
+     e64:	04 c0       	rjmp	.+8      	; 0xe6e <__vector_11+0x196>
+		UECONX = (1<<STALLRQ) | (1<<EPEN);  // ---->    Stall();
+     e66:	81 e2       	ldi	r24, 0x21	; 33
+     e68:	80 93 eb 00 	sts	0x00EB, r24	; 0x8000eb <__DATA_REGION_ORIGIN__+0x8b>
+		return;
+     e6c:	03 c0       	rjmp	.+6      	; 0xe74 <__vector_11+0x19c>
+	WAIT_EVENT(!(UEINTX & (1 << TXINI)))
+}
+
+void CleanIN()
+{
+	UEINTX = ~(1 << TXINI);
+     e6e:	8e ef       	ldi	r24, 0xFE	; 254
+     e70:	80 93 e8 00 	sts	0x00E8, r24	; 0x8000e8 <__DATA_REGION_ORIGIN__+0x88>
+		UECONX = (1<<STALLRQ) | (1<<EPEN);  // ---->    Stall();
+		return;
+	}
+	
+	CleanIN();		 // ?????????? ?????? ...
+}
+     e74:	28 96       	adiw	r28, 0x08	; 8
+     e76:	0f b6       	in	r0, 0x3f	; 63
+     e78:	f8 94       	cli
+     e7a:	de bf       	out	0x3e, r29	; 62
+     e7c:	0f be       	out	0x3f, r0	; 63
+     e7e:	cd bf       	out	0x3d, r28	; 61
+     e80:	df 91       	pop	r29
+     e82:	cf 91       	pop	r28
+     e84:	ff 91       	pop	r31
+     e86:	ef 91       	pop	r30
+     e88:	bf 91       	pop	r27
+     e8a:	af 91       	pop	r26
+     e8c:	9f 91       	pop	r25
+     e8e:	8f 91       	pop	r24
+     e90:	7f 91       	pop	r23
+     e92:	6f 91       	pop	r22
+     e94:	5f 91       	pop	r21
+     e96:	4f 91       	pop	r20
+     e98:	3f 91       	pop	r19
+     e9a:	2f 91       	pop	r18
+     e9c:	1f 91       	pop	r17
+     e9e:	0f 91       	pop	r16
+     ea0:	ff 90       	pop	r15
+     ea2:	ef 90       	pop	r14
+     ea4:	0f 90       	pop	r0
+     ea6:	0f be       	out	0x3f, r0	; 63
+     ea8:	0f 90       	pop	r0
+     eaa:	1f 90       	pop	r1
+     eac:	18 95       	reti
+
+00000eae <_Z13CDC_Send_DataPKcs>:
+	return true;
+}
+
+bool CDC_Send_Data(const char* data, short length)
+{
+	if ( _usbLineInfo.lineState > 0 )
+     eae:	20 91 25 01 	lds	r18, 0x0125	; 0x800125 <_ZL12_usbLineInfo+0x7>
+     eb2:	22 23       	and	r18, r18
+     eb4:	29 f0       	breq	.+10     	; 0xec0 <_Z13CDC_Send_DataPKcs+0x12>
+     eb6:	ab 01       	movw	r20, r22
+     eb8:	bc 01       	movw	r22, r24
+	{
+		const char epid = 3; // cdc data in ep
+		SendUsb(epid, data, length);
+     eba:	83 e0       	ldi	r24, 0x03	; 3
+     ebc:	0e 94 45 03 	call	0x68a	; 0x68a <_Z7SendUsbcPKcs>
+	}
+	
+	return true;
+}
+     ec0:	81 e0       	ldi	r24, 0x01	; 1
+     ec2:	08 95       	ret
+
+00000ec4 <_Z13CDC_Send_Byteh>:
+
+bool CDC_Send_Byte(uchar data)
+{
+     ec4:	cf 93       	push	r28
+     ec6:	df 93       	push	r29
+     ec8:	cd b7       	in	r28, 0x3d	; 61
+     eca:	de b7       	in	r29, 0x3e	; 62
+     ecc:	60 97       	sbiw	r28, 0x10	; 16
+     ece:	0f b6       	in	r0, 0x3f	; 63
+     ed0:	f8 94       	cli
+     ed2:	de bf       	out	0x3e, r29	; 62
+     ed4:	0f be       	out	0x3f, r0	; 63
+     ed6:	cd bf       	out	0x3d, r28	; 61
+	char* ans = "00";
+	char hh[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+     ed8:	90 e1       	ldi	r25, 0x10	; 16
+     eda:	e7 e2       	ldi	r30, 0x27	; 39
+     edc:	f1 e0       	ldi	r31, 0x01	; 1
+     ede:	de 01       	movw	r26, r28
+     ee0:	11 96       	adiw	r26, 0x01	; 1
+     ee2:	01 90       	ld	r0, Z+
+     ee4:	0d 92       	st	X+, r0
+     ee6:	9a 95       	dec	r25
+     ee8:	e1 f7       	brne	.-8      	; 0xee2 <_Z13CDC_Send_Byteh+0x1e>
+
+	ans[1] = hh[data%16];
+     eea:	a6 e5       	ldi	r26, 0x56	; 86
+     eec:	b1 e0       	ldi	r27, 0x01	; 1
+     eee:	98 2f       	mov	r25, r24
+     ef0:	9f 70       	andi	r25, 0x0F	; 15
+     ef2:	e1 e0       	ldi	r30, 0x01	; 1
+     ef4:	f0 e0       	ldi	r31, 0x00	; 0
+     ef6:	ec 0f       	add	r30, r28
+     ef8:	fd 1f       	adc	r31, r29
+     efa:	e9 0f       	add	r30, r25
+     efc:	f1 1d       	adc	r31, r1
+     efe:	90 81       	ld	r25, Z
+     f00:	11 96       	adiw	r26, 0x01	; 1
+     f02:	9c 93       	st	X, r25
+     f04:	11 97       	sbiw	r26, 0x01	; 1
+	ans[0] = hh[data/16];
+     f06:	82 95       	swap	r24
+     f08:	8f 70       	andi	r24, 0x0F	; 15
+     f0a:	e1 e0       	ldi	r30, 0x01	; 1
+     f0c:	f0 e0       	ldi	r31, 0x00	; 0
+     f0e:	ec 0f       	add	r30, r28
+     f10:	fd 1f       	adc	r31, r29
+     f12:	e8 0f       	add	r30, r24
+     f14:	f1 1d       	adc	r31, r1
+     f16:	80 81       	ld	r24, Z
+     f18:	8c 93       	st	X, r24
+	return CDC_Send_Data(ans, 2);
+     f1a:	62 e0       	ldi	r22, 0x02	; 2
+     f1c:	70 e0       	ldi	r23, 0x00	; 0
+     f1e:	cd 01       	movw	r24, r26
+     f20:	0e 94 57 07 	call	0xeae	; 0xeae <_Z13CDC_Send_DataPKcs>
+     f24:	60 96       	adiw	r28, 0x10	; 16
+     f26:	0f b6       	in	r0, 0x3f	; 63
+     f28:	f8 94       	cli
+     f2a:	de bf       	out	0x3e, r29	; 62
+     f2c:	0f be       	out	0x3f, r0	; 63
+     f2e:	cd bf       	out	0x3d, r28	; 61
+     f30:	df 91       	pop	r29
+     f32:	cf 91       	pop	r28
+     f34:	08 95       	ret
+
+00000f36 <_GLOBAL__sub_I___vector_10>:
+
+#define D_IAD(_firstInterface, _count, _class, _subClass, _protocol) \
+{ 8, 11, _firstInterface, _count, _class, _subClass, _protocol, 0 }
+
+
+volatile static struct{
+     f36:	81 e0       	ldi	r24, 0x01	; 1
+     f38:	80 93 3d 03 	sts	0x033D, r24	; 0x80033d <_ZL9USB_STATE+0x2>
+     f3c:	08 95       	ret
+
+00000f3e <main>:
+
+extern char sd_buff[512];
+
+int main(void)
+{
+	debug_master_init();
+     f3e:	0e 94 59 09 	call	0x12b2	; 0x12b2 <_Z17debug_master_initv>
+	debug_send("[AVRDBG]-");
+     f42:	88 e9       	ldi	r24, 0x98	; 152
+     f44:	92 e0       	ldi	r25, 0x02	; 2
+     f46:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+	debug_byte(0xEA);
+     f4a:	8a ee       	ldi	r24, 0xEA	; 234
+     f4c:	0e 94 8b 09 	call	0x1316	; 0x1316 <_Z10debug_byteh>
+	debug_send(";");
+     f50:	89 e3       	ldi	r24, 0x39	; 57
+     f52:	91 e0       	ldi	r25, 0x01	; 1
+     f54:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+
+	uchar status;
+	sspi_init();
+     f58:	0e 94 b8 00 	call	0x170	; 0x170 <_Z9sspi_initv>
+
+	usb_core_init();
+     f5c:	0e 94 d9 00 	call	0x1b2	; 0x1b2 <_Z13usb_core_initv>
+
+	status = SD_init();
+     f60:	0e 94 50 08 	call	0x10a0	; 0x10a0 <_Z7SD_initv>
+     f64:	c8 2f       	mov	r28, r24
+	debug_send("SDCARDS:");
+     f66:	82 ea       	ldi	r24, 0xA2	; 162
+     f68:	92 e0       	ldi	r25, 0x02	; 2
+     f6a:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+	debug_byte(status);
+     f6e:	8c 2f       	mov	r24, r28
+     f70:	0e 94 8b 09 	call	0x1316	; 0x1316 <_Z10debug_byteh>
+	debug_byte(status);
+     f74:	8c 2f       	mov	r24, r28
+     f76:	0e 94 8b 09 	call	0x1316	; 0x1316 <_Z10debug_byteh>
+	debug_send(";");
+     f7a:	89 e3       	ldi	r24, 0x39	; 57
+     f7c:	91 e0       	ldi	r25, 0x01	; 1
+     f7e:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+     f82:	ff cf       	rjmp	.-2      	; 0xf82 <main+0x44>
+
+00000f84 <_GLOBAL__sub_I_main>:
+     f84:	81 e0       	ldi	r24, 0x01	; 1
+     f86:	80 93 41 03 	sts	0x0341, r24	; 0x800341 <_ZL9USB_STATE+0x2>
+     f8a:	08 95       	ret
+
+00000f8c <_Z14SD_sendCommandhmb>:
+
+	sspi_recv(); //extra 8 clock pulses
+	SD_CS_DEASSERT;
+
+	return 0;
+}
+     f8c:	cf 92       	push	r12
+     f8e:	df 92       	push	r13
+     f90:	ef 92       	push	r14
+     f92:	ff 92       	push	r15
+     f94:	0f 93       	push	r16
+     f96:	1f 93       	push	r17
+     f98:	cf 93       	push	r28
+     f9a:	df 93       	push	r29
+     f9c:	18 2f       	mov	r17, r24
+     f9e:	6a 01       	movw	r12, r20
+     fa0:	7b 01       	movw	r14, r22
+     fa2:	02 2f       	mov	r16, r18
+     fa4:	80 91 44 03 	lds	r24, 0x0344	; 0x800344 <_ZL10_SDHC_flag>
+     fa8:	81 11       	cpse	r24, r1
+     faa:	15 c0       	rjmp	.+42     	; 0xfd6 <_Z14SD_sendCommandhmb+0x4a>
+     fac:	8f ee       	ldi	r24, 0xEF	; 239
+     fae:	81 0f       	add	r24, r17
+     fb0:	82 30       	cpi	r24, 0x02	; 2
+     fb2:	40 f0       	brcs	.+16     	; 0xfc4 <_Z14SD_sendCommandhmb+0x38>
+     fb4:	88 ee       	ldi	r24, 0xE8	; 232
+     fb6:	81 0f       	add	r24, r17
+     fb8:	82 30       	cpi	r24, 0x02	; 2
+     fba:	20 f0       	brcs	.+8      	; 0xfc4 <_Z14SD_sendCommandhmb+0x38>
+     fbc:	80 ee       	ldi	r24, 0xE0	; 224
+     fbe:	81 0f       	add	r24, r17
+     fc0:	82 30       	cpi	r24, 0x02	; 2
+     fc2:	48 f4       	brcc	.+18     	; 0xfd6 <_Z14SD_sendCommandhmb+0x4a>
+     fc4:	0b 2e       	mov	r0, r27
+     fc6:	b9 e0       	ldi	r27, 0x09	; 9
+     fc8:	cc 0c       	add	r12, r12
+     fca:	dd 1c       	adc	r13, r13
+     fcc:	ee 1c       	adc	r14, r14
+     fce:	ff 1c       	adc	r15, r15
+     fd0:	ba 95       	dec	r27
+     fd2:	d1 f7       	brne	.-12     	; 0xfc8 <_Z14SD_sendCommandhmb+0x3c>
+     fd4:	b0 2d       	mov	r27, r0
+     fd6:	2c 98       	cbi	0x05, 4	; 5
+     fd8:	81 2f       	mov	r24, r17
+     fda:	80 64       	ori	r24, 0x40	; 64
+     fdc:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+     fe0:	8f 2d       	mov	r24, r15
+     fe2:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+     fe6:	8e 2d       	mov	r24, r14
+     fe8:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+     fec:	8d 2d       	mov	r24, r13
+     fee:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+     ff2:	8c 2d       	mov	r24, r12
+     ff4:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+     ff8:	18 30       	cpi	r17, 0x08	; 8
+     ffa:	21 f4       	brne	.+8      	; 0x1004 <_Z14SD_sendCommandhmb+0x78>
+     ffc:	87 e8       	ldi	r24, 0x87	; 135
+     ffe:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+    1002:	03 c0       	rjmp	.+6      	; 0x100a <_Z14SD_sendCommandhmb+0x7e>
+    1004:	85 e9       	ldi	r24, 0x95	; 149
+    1006:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+    100a:	c0 e0       	ldi	r28, 0x00	; 0
+    100c:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+    1010:	d8 2f       	mov	r29, r24
+    1012:	8f 3f       	cpi	r24, 0xFF	; 255
+    1014:	19 f4       	brne	.+6      	; 0x101c <_Z14SD_sendCommandhmb+0x90>
+    1016:	c1 50       	subi	r28, 0x01	; 1
+    1018:	c9 f7       	brne	.-14     	; 0x100c <_Z14SD_sendCommandhmb+0x80>
+    101a:	38 c0       	rjmp	.+112    	; 0x108c <_Z14SD_sendCommandhmb+0x100>
+    101c:	18 30       	cpi	r17, 0x08	; 8
+    101e:	11 f0       	breq	.+4      	; 0x1024 <_Z14SD_sendCommandhmb+0x98>
+    1020:	1a 33       	cpi	r17, 0x3A	; 58
+    1022:	09 f5       	brne	.+66     	; 0x1066 <_Z14SD_sendCommandhmb+0xda>
+    1024:	67 e0       	ldi	r22, 0x07	; 7
+    1026:	70 e0       	ldi	r23, 0x00	; 0
+    1028:	8b ea       	ldi	r24, 0xAB	; 171
+    102a:	92 e0       	ldi	r25, 0x02	; 2
+    102c:	0e 94 57 07 	call	0xeae	; 0xeae <_Z13CDC_Send_DataPKcs>
+    1030:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+    1034:	0e 94 62 07 	call	0xec4	; 0xec4 <_Z13CDC_Send_Byteh>
+    1038:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+    103c:	0e 94 62 07 	call	0xec4	; 0xec4 <_Z13CDC_Send_Byteh>
+    1040:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+    1044:	0e 94 62 07 	call	0xec4	; 0xec4 <_Z13CDC_Send_Byteh>
+    1048:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+    104c:	0e 94 62 07 	call	0xec4	; 0xec4 <_Z13CDC_Send_Byteh>
+    1050:	61 e0       	ldi	r22, 0x01	; 1
+    1052:	70 e0       	ldi	r23, 0x00	; 0
+    1054:	89 e3       	ldi	r24, 0x39	; 57
+    1056:	91 e0       	ldi	r25, 0x01	; 1
+    1058:	0e 94 57 07 	call	0xeae	; 0xeae <_Z13CDC_Send_DataPKcs>
+    105c:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+    1060:	01 11       	cpse	r16, r1
+    1062:	04 c0       	rjmp	.+8      	; 0x106c <_Z14SD_sendCommandhmb+0xe0>
+    1064:	04 c0       	rjmp	.+8      	; 0x106e <_Z14SD_sendCommandhmb+0xe2>
+    1066:	88 23       	and	r24, r24
+    1068:	61 f0       	breq	.+24     	; 0x1082 <_Z14SD_sendCommandhmb+0xf6>
+    106a:	06 c0       	rjmp	.+12     	; 0x1078 <_Z14SD_sendCommandhmb+0xec>
+    106c:	2c 9a       	sbi	0x05, 4	; 5
+    106e:	d1 11       	cpse	r29, r1
+    1070:	0d c0       	rjmp	.+26     	; 0x108c <_Z14SD_sendCommandhmb+0x100>
+    1072:	10 92 26 01 	sts	0x0126, r1	; 0x800126 <_ZL13_sdcard_state>
+    1076:	0a c0       	rjmp	.+20     	; 0x108c <_Z14SD_sendCommandhmb+0x100>
+    1078:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+    107c:	01 11       	cpse	r16, r1
+    107e:	f6 cf       	rjmp	.-20     	; 0x106c <_Z14SD_sendCommandhmb+0xe0>
+    1080:	05 c0       	rjmp	.+10     	; 0x108c <_Z14SD_sendCommandhmb+0x100>
+    1082:	0e 94 cd 00 	call	0x19a	; 0x19a <_Z9sspi_recvv>
+    1086:	00 23       	and	r16, r16
+    1088:	a1 f3       	breq	.-24     	; 0x1072 <_Z14SD_sendCommandhmb+0xe6>
+    108a:	f0 cf       	rjmp	.-32     	; 0x106c <_Z14SD_sendCommandhmb+0xe0>
+    108c:	8d 2f       	mov	r24, r29
+    108e:	df 91       	pop	r29
+    1090:	cf 91       	pop	r28
+    1092:	1f 91       	pop	r17
+    1094:	0f 91       	pop	r16
+    1096:	ff 90       	pop	r15
+    1098:	ef 90       	pop	r14
+    109a:	df 90       	pop	r13
+    109c:	cf 90       	pop	r12
+    109e:	08 95       	ret
+
+000010a0 <_Z7SD_initv>:
+    10a0:	0f 93       	push	r16
+    10a2:	1f 93       	push	r17
+    10a4:	cf 93       	push	r28
+    10a6:	df 93       	push	r29
+    10a8:	00 d0       	rcall	.+0      	; 0x10aa <_Z7SD_initv+0xa>
+    10aa:	1f 92       	push	r1
+    10ac:	cd b7       	in	r28, 0x3d	; 61
+    10ae:	de b7       	in	r29, 0x3e	; 62
+    10b0:	8f e9       	ldi	r24, 0x9F	; 159
+    10b2:	9f e0       	ldi	r25, 0x0F	; 15
+    10b4:	01 97       	sbiw	r24, 0x01	; 1
+    10b6:	f1 f7       	brne	.-4      	; 0x10b4 <_Z7SD_initv+0x14>
+    10b8:	00 c0       	rjmp	.+0      	; 0x10ba <_Z7SD_initv+0x1a>
+    10ba:	00 00       	nop
+    10bc:	2c 9a       	sbi	0x05, 4	; 5
+    10be:	1a e0       	ldi	r17, 0x0A	; 10
+    10c0:	8f ef       	ldi	r24, 0xFF	; 255
+    10c2:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+    10c6:	11 50       	subi	r17, 0x01	; 1
+    10c8:	d9 f7       	brne	.-10     	; 0x10c0 <_Z7SD_initv+0x20>
+    10ca:	2c 98       	cbi	0x05, 4	; 5
+    10cc:	21 e0       	ldi	r18, 0x01	; 1
+    10ce:	40 e0       	ldi	r20, 0x00	; 0
+    10d0:	50 e0       	ldi	r21, 0x00	; 0
+    10d2:	ba 01       	movw	r22, r20
+    10d4:	80 e0       	ldi	r24, 0x00	; 0
+    10d6:	0e 94 c6 07 	call	0xf8c	; 0xf8c <_Z14SD_sendCommandhmb>
+    10da:	20 e2       	ldi	r18, 0x20	; 32
+    10dc:	30 e0       	ldi	r19, 0x00	; 0
+    10de:	3b 83       	std	Y+3, r19	; 0x03
+    10e0:	2a 83       	std	Y+2, r18	; 0x02
+    10e2:	10 c0       	rjmp	.+32     	; 0x1104 <_Z7SD_initv+0x64>
+    10e4:	21 e0       	ldi	r18, 0x01	; 1
+    10e6:	40 e0       	ldi	r20, 0x00	; 0
+    10e8:	50 e0       	ldi	r21, 0x00	; 0
+    10ea:	ba 01       	movw	r22, r20
+    10ec:	80 e0       	ldi	r24, 0x00	; 0
+    10ee:	0e 94 c6 07 	call	0xf8c	; 0xf8c <_Z14SD_sendCommandhmb>
+    10f2:	2a 81       	ldd	r18, Y+2	; 0x02
+    10f4:	3b 81       	ldd	r19, Y+3	; 0x03
+    10f6:	21 50       	subi	r18, 0x01	; 1
+    10f8:	31 09       	sbc	r19, r1
+    10fa:	3b 83       	std	Y+3, r19	; 0x03
+    10fc:	2a 83       	std	Y+2, r18	; 0x02
+    10fe:	23 2b       	or	r18, r19
+    1100:	09 f4       	brne	.+2      	; 0x1104 <_Z7SD_initv+0x64>
+    1102:	ab c0       	rjmp	.+342    	; 0x125a <_Z7SD_initv+0x1ba>
+    1104:	81 30       	cpi	r24, 0x01	; 1
+    1106:	71 f7       	brne	.-36     	; 0x10e4 <_Z7SD_initv+0x44>
+    1108:	2c 9a       	sbi	0x05, 4	; 5
+    110a:	8f ef       	ldi	r24, 0xFF	; 255
+    110c:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+    1110:	8f ef       	ldi	r24, 0xFF	; 255
+    1112:	0e 94 c0 00 	call	0x180	; 0x180 <_Z9sspi_sendh>
+    1116:	6c e0       	ldi	r22, 0x0C	; 12
+    1118:	70 e0       	ldi	r23, 0x00	; 0
+    111a:	83 eb       	ldi	r24, 0xB3	; 179
+    111c:	92 e0       	ldi	r25, 0x02	; 2
+    111e:	0e 94 57 07 	call	0xeae	; 0xeae <_Z13CDC_Send_DataPKcs>
+    1122:	21 e0       	ldi	r18, 0x01	; 1
+    1124:	4a ea       	ldi	r20, 0xAA	; 170
+    1126:	51 e0       	ldi	r21, 0x01	; 1
+    1128:	60 e0       	ldi	r22, 0x00	; 0
+    112a:	70 e0       	ldi	r23, 0x00	; 0
+    112c:	88 e0       	ldi	r24, 0x08	; 8
+    112e:	0e 94 c6 07 	call	0xf8c	; 0xf8c <_Z14SD_sendCommandhmb>
+    1132:	08 2f       	mov	r16, r24
+    1134:	8e ef       	ldi	r24, 0xFE	; 254
+    1136:	90 e0       	ldi	r25, 0x00	; 0
+    1138:	9b 83       	std	Y+3, r25	; 0x03
+    113a:	8a 83       	std	Y+2, r24	; 0x02
+    113c:	1d c0       	rjmp	.+58     	; 0x1178 <_Z7SD_initv+0xd8>
+    113e:	6c e0       	ldi	r22, 0x0C	; 12
+    1140:	70 e0       	ldi	r23, 0x00	; 0
+    1142:	83 eb       	ldi	r24, 0xB3	; 179
+    1144:	92 e0       	ldi	r25, 0x02	; 2
+    1146:	0e 94 57 07 	call	0xeae	; 0xeae <_Z13CDC_Send_DataPKcs>
+    114a:	21 e0       	ldi	r18, 0x01	; 1
+    114c:	4a ea       	ldi	r20, 0xAA	; 170
+    114e:	51 e0       	ldi	r21, 0x01	; 1
+    1150:	60 e0       	ldi	r22, 0x00	; 0
+    1152:	70 e0       	ldi	r23, 0x00	; 0
+    1154:	88 e0       	ldi	r24, 0x08	; 8
+    1156:	0e 94 c6 07 	call	0xf8c	; 0xf8c <_Z14SD_sendCommandhmb>
+    115a:	08 2f       	mov	r16, r24
+    115c:	2a 81       	ldd	r18, Y+2	; 0x02
+    115e:	3b 81       	ldd	r19, Y+3	; 0x03
+    1160:	21 50       	subi	r18, 0x01	; 1
+    1162:	31 09       	sbc	r19, r1
+    1164:	3b 83       	std	Y+3, r19	; 0x03
+    1166:	2a 83       	std	Y+2, r18	; 0x02
+    1168:	23 2b       	or	r18, r19
+    116a:	31 f4       	brne	.+12     	; 0x1178 <_Z7SD_initv+0xd8>
+    116c:	81 e0       	ldi	r24, 0x01	; 1
+    116e:	80 93 43 03 	sts	0x0343, r24	; 0x800343 <_ZL9_cardType>
+    1172:	31 e0       	ldi	r19, 0x01	; 1
+    1174:	39 83       	std	Y+1, r19	; 0x01
+    1176:	04 c0       	rjmp	.+8      	; 0x1180 <_Z7SD_initv+0xe0>
+    1178:	01 30       	cpi	r16, 0x01	; 1
+    117a:	09 f7       	brne	.-62     	; 0x113e <_Z7SD_initv+0x9e>
+    117c:	82 e0       	ldi	r24, 0x02	; 2
+    117e:	89 83       	std	Y+1, r24	; 0x01
+    1180:	61 e0       	ldi	r22, 0x01	; 1
+    1182:	70 e0       	ldi	r23, 0x00	; 0
+    1184:	8d e1       	ldi	r24, 0x1D	; 29
+    1186:	93 e0       	ldi	r25, 0x03	; 3
+    1188:	0e 94 57 07 	call	0xeae	; 0xeae <_Z13CDC_Send_DataPKcs>
+    118c:	80 2f       	mov	r24, r16
+    118e:	0e 94 62 07 	call	0xec4	; 0xec4 <_Z13CDC_Send_Byteh>
+    1192:	61 e0       	ldi	r22, 0x01	; 1
+    1194:	70 e0       	ldi	r23, 0x00	; 0
+    1196:	80 ec       	ldi	r24, 0xC0	; 192
+    1198:	92 e0       	ldi	r25, 0x02	; 2
+    119a:	0e 94 57 07 	call	0xeae	; 0xeae <_Z13CDC_Send_DataPKcs>
+    119e:	21 e0       	ldi	r18, 0x01	; 1
+    11a0:	40 e0       	ldi	r20, 0x00	; 0
+    11a2:	50 e0       	ldi	r21, 0x00	; 0
+    11a4:	ba 01       	movw	r22, r20
+    11a6:	87 e3       	ldi	r24, 0x37	; 55
+    11a8:	0e 94 c6 07 	call	0xf8c	; 0xf8c <_Z14SD_sendCommandhmb>
+    11ac:	2e ef       	ldi	r18, 0xFE	; 254
+    11ae:	30 e0       	ldi	r19, 0x00	; 0
+    11b0:	3b 83       	std	Y+3, r19	; 0x03
+    11b2:	2a 83       	std	Y+2, r18	; 0x02
+    11b4:	10 c0       	rjmp	.+32     	; 0x11d6 <_Z7SD_initv+0x136>
+    11b6:	21 e0       	ldi	r18, 0x01	; 1
+    11b8:	40 e0       	ldi	r20, 0x00	; 0
+    11ba:	50 e0       	ldi	r21, 0x00	; 0
+    11bc:	ba 01       	movw	r22, r20
+    11be:	87 e3       	ldi	r24, 0x37	; 55
+    11c0:	0e 94 c6 07 	call	0xf8c	; 0xf8c <_Z14SD_sendCommandhmb>
+    11c4:	2a 81       	ldd	r18, Y+2	; 0x02
+    11c6:	3b 81       	ldd	r19, Y+3	; 0x03
+    11c8:	21 50       	subi	r18, 0x01	; 1
+    11ca:	31 09       	sbc	r19, r1
+    11cc:	3b 83       	std	Y+3, r19	; 0x03
+    11ce:	2a 83       	std	Y+2, r18	; 0x02
+    11d0:	23 2b       	or	r18, r19
+    11d2:	09 f4       	brne	.+2      	; 0x11d6 <_Z7SD_initv+0x136>
+    11d4:	44 c0       	rjmp	.+136    	; 0x125e <_Z7SD_initv+0x1be>
+    11d6:	81 30       	cpi	r24, 0x01	; 1
+    11d8:	71 f7       	brne	.-36     	; 0x11b6 <_Z7SD_initv+0x116>
+    11da:	51 c0       	rjmp	.+162    	; 0x127e <_Z7SD_initv+0x1de>
+    11dc:	21 e0       	ldi	r18, 0x01	; 1
+    11de:	40 e0       	ldi	r20, 0x00	; 0
+    11e0:	50 e0       	ldi	r21, 0x00	; 0
+    11e2:	60 e0       	ldi	r22, 0x00	; 0
+    11e4:	70 e4       	ldi	r23, 0x40	; 64
+    11e6:	89 e2       	ldi	r24, 0x29	; 41
+    11e8:	0e 94 c6 07 	call	0xf8c	; 0xf8c <_Z14SD_sendCommandhmb>
+    11ec:	2a 81       	ldd	r18, Y+2	; 0x02
+    11ee:	3b 81       	ldd	r19, Y+3	; 0x03
+    11f0:	21 50       	subi	r18, 0x01	; 1
+    11f2:	31 09       	sbc	r19, r1
+    11f4:	3b 83       	std	Y+3, r19	; 0x03
+    11f6:	2a 83       	std	Y+2, r18	; 0x02
+    11f8:	23 2b       	or	r18, r19
+    11fa:	99 f1       	breq	.+102    	; 0x1262 <_Z7SD_initv+0x1c2>
+    11fc:	81 30       	cpi	r24, 0x01	; 1
+    11fe:	71 f7       	brne	.-36     	; 0x11dc <_Z7SD_initv+0x13c>
+    1200:	10 92 44 03 	sts	0x0344, r1	; 0x800344 <_ZL10_SDHC_flag>
+    1204:	39 81       	ldd	r19, Y+1	; 0x01
+    1206:	32 30       	cpi	r19, 0x02	; 2
+    1208:	09 f0       	breq	.+2      	; 0x120c <_Z7SD_initv+0x16c>
+    120a:	46 c0       	rjmp	.+140    	; 0x1298 <_Z7SD_initv+0x1f8>
+    120c:	2c c0       	rjmp	.+88     	; 0x1266 <_Z7SD_initv+0x1c6>
+    120e:	21 e0       	ldi	r18, 0x01	; 1
+    1210:	40 e0       	ldi	r20, 0x00	; 0
+    1212:	50 e0       	ldi	r21, 0x00	; 0
+    1214:	ba 01       	movw	r22, r20
+    1216:	8a e3       	ldi	r24, 0x3A	; 58
+    1218:	0e 94 c6 07 	call	0xf8c	; 0xf8c <_Z14SD_sendCommandhmb>
+    121c:	2a 81       	ldd	r18, Y+2	; 0x02
+    121e:	3b 81       	ldd	r19, Y+3	; 0x03
+    1220:	21 50       	subi	r18, 0x01	; 1
+    1222:	31 09       	sbc	r19, r1
+    1224:	3b 83       	std	Y+3, r19	; 0x03
+    1226:	2a 83       	std	Y+2, r18	; 0x02
+    1228:	23 2b       	or	r18, r19
+    122a:	49 f4       	brne	.+18     	; 0x123e <_Z7SD_initv+0x19e>
+    122c:	10 92 43 03 	sts	0x0343, r1	; 0x800343 <_ZL9_cardType>
+    1230:	63 e0       	ldi	r22, 0x03	; 3
+    1232:	70 e0       	ldi	r23, 0x00	; 0
+    1234:	82 ec       	ldi	r24, 0xC2	; 194
+    1236:	92 e0       	ldi	r25, 0x02	; 2
+    1238:	0e 94 57 07 	call	0xeae	; 0xeae <_Z13CDC_Send_DataPKcs>
+    123c:	02 c0       	rjmp	.+4      	; 0x1242 <_Z7SD_initv+0x1a2>
+    123e:	81 11       	cpse	r24, r1
+    1240:	e6 cf       	rjmp	.-52     	; 0x120e <_Z7SD_initv+0x16e>
+    1242:	80 91 44 03 	lds	r24, 0x0344	; 0x800344 <_ZL10_SDHC_flag>
+    1246:	81 30       	cpi	r24, 0x01	; 1
+    1248:	21 f4       	brne	.+8      	; 0x1252 <_Z7SD_initv+0x1b2>
+    124a:	82 e0       	ldi	r24, 0x02	; 2
+    124c:	80 93 43 03 	sts	0x0343, r24	; 0x800343 <_ZL9_cardType>
+    1250:	23 c0       	rjmp	.+70     	; 0x1298 <_Z7SD_initv+0x1f8>
+    1252:	83 e0       	ldi	r24, 0x03	; 3
+    1254:	80 93 43 03 	sts	0x0343, r24	; 0x800343 <_ZL9_cardType>
+    1258:	1f c0       	rjmp	.+62     	; 0x1298 <_Z7SD_initv+0x1f8>
+    125a:	11 e0       	ldi	r17, 0x01	; 1
+    125c:	1d c0       	rjmp	.+58     	; 0x1298 <_Z7SD_initv+0x1f8>
+    125e:	12 e0       	ldi	r17, 0x02	; 2
+    1260:	1b c0       	rjmp	.+54     	; 0x1298 <_Z7SD_initv+0x1f8>
+    1262:	13 e0       	ldi	r17, 0x03	; 3
+    1264:	19 c0       	rjmp	.+50     	; 0x1298 <_Z7SD_initv+0x1f8>
+    1266:	21 e0       	ldi	r18, 0x01	; 1
+    1268:	40 e0       	ldi	r20, 0x00	; 0
+    126a:	50 e0       	ldi	r21, 0x00	; 0
+    126c:	ba 01       	movw	r22, r20
+    126e:	8a e3       	ldi	r24, 0x3A	; 58
+    1270:	0e 94 c6 07 	call	0xf8c	; 0xf8c <_Z14SD_sendCommandhmb>
+    1274:	2e ef       	ldi	r18, 0xFE	; 254
+    1276:	30 e0       	ldi	r19, 0x00	; 0
+    1278:	3b 83       	std	Y+3, r19	; 0x03
+    127a:	2a 83       	std	Y+2, r18	; 0x02
+    127c:	e0 cf       	rjmp	.-64     	; 0x123e <_Z7SD_initv+0x19e>
+    127e:	21 e0       	ldi	r18, 0x01	; 1
+    1280:	40 e0       	ldi	r20, 0x00	; 0
+    1282:	50 e0       	ldi	r21, 0x00	; 0
+    1284:	60 e0       	ldi	r22, 0x00	; 0
+    1286:	70 e4       	ldi	r23, 0x40	; 64
+    1288:	89 e2       	ldi	r24, 0x29	; 41
+    128a:	0e 94 c6 07 	call	0xf8c	; 0xf8c <_Z14SD_sendCommandhmb>
+    128e:	2e ef       	ldi	r18, 0xFE	; 254
+    1290:	30 e0       	ldi	r19, 0x00	; 0
+    1292:	3b 83       	std	Y+3, r19	; 0x03
+    1294:	2a 83       	std	Y+2, r18	; 0x02
+    1296:	b2 cf       	rjmp	.-156    	; 0x11fc <_Z7SD_initv+0x15c>
+    1298:	81 2f       	mov	r24, r17
+    129a:	0f 90       	pop	r0
+    129c:	0f 90       	pop	r0
+    129e:	0f 90       	pop	r0
+    12a0:	df 91       	pop	r29
+    12a2:	cf 91       	pop	r28
+    12a4:	1f 91       	pop	r17
+    12a6:	0f 91       	pop	r16
+    12a8:	08 95       	ret
+
+000012aa <_GLOBAL__sub_I__Z7SD_initv>:
+    12aa:	81 e0       	ldi	r24, 0x01	; 1
+    12ac:	80 93 47 03 	sts	0x0347, r24	; 0x800347 <_ZL9USB_STATE+0x2>
+    12b0:	08 95       	ret
+
+000012b2 <_Z17debug_master_initv>:
+	debug_send("len[");
+	debug_byte(wLength >> 8);
+	debug_byte(wLength);
+	debug_send("] )");
+
+}
+    12b2:	84 b1       	in	r24, 0x04	; 4
+    12b4:	80 6e       	ori	r24, 0xE0	; 224
+    12b6:	84 b9       	out	0x04, r24	; 4
+    12b8:	85 b1       	in	r24, 0x05	; 5
+    12ba:	80 6a       	ori	r24, 0xA0	; 160
+    12bc:	85 b9       	out	0x05, r24	; 5
+    12be:	2e 98       	cbi	0x05, 6	; 5
+    12c0:	08 95       	ret
+
+000012c2 <_Z10debug_sendc>:
+    12c2:	2f 98       	cbi	0x05, 7	; 5
+    12c4:	98 e0       	ldi	r25, 0x08	; 8
+    12c6:	88 23       	and	r24, r24
+    12c8:	14 f4       	brge	.+4      	; 0x12ce <_Z10debug_sendc+0xc>
+    12ca:	2d 9a       	sbi	0x05, 5	; 5
+    12cc:	01 c0       	rjmp	.+2      	; 0x12d0 <_Z10debug_sendc+0xe>
+    12ce:	2d 98       	cbi	0x05, 5	; 5
+    12d0:	2e 9a       	sbi	0x05, 6	; 5
+    12d2:	00 00       	nop
+    12d4:	00 00       	nop
+    12d6:	88 0f       	add	r24, r24
+    12d8:	2e 98       	cbi	0x05, 6	; 5
+    12da:	00 00       	nop
+    12dc:	91 50       	subi	r25, 0x01	; 1
+    12de:	99 f7       	brne	.-26     	; 0x12c6 <_Z10debug_sendc+0x4>
+    12e0:	00 00       	nop
+    12e2:	85 b1       	in	r24, 0x05	; 5
+    12e4:	80 6a       	ori	r24, 0xA0	; 160
+    12e6:	85 b9       	out	0x05, r24	; 5
+    12e8:	08 95       	ret
+
+000012ea <_Z10debug_sendPKc>:
+    12ea:	0f 93       	push	r16
+    12ec:	1f 93       	push	r17
+    12ee:	cf 93       	push	r28
+    12f0:	df 93       	push	r29
+    12f2:	ec 01       	movw	r28, r24
+    12f4:	8c 01       	movw	r16, r24
+    12f6:	01 50       	subi	r16, 0x01	; 1
+    12f8:	1f 4f       	sbci	r17, 0xFF	; 255
+    12fa:	88 81       	ld	r24, Y
+    12fc:	88 23       	and	r24, r24
+    12fe:	31 f0       	breq	.+12     	; 0x130c <_Z10debug_sendPKc+0x22>
+    1300:	21 96       	adiw	r28, 0x01	; 1
+    1302:	0e 94 61 09 	call	0x12c2	; 0x12c2 <_Z10debug_sendc>
+    1306:	c0 17       	cp	r28, r16
+    1308:	d1 07       	cpc	r29, r17
+    130a:	b9 f7       	brne	.-18     	; 0x12fa <_Z10debug_sendPKc+0x10>
+    130c:	df 91       	pop	r29
+    130e:	cf 91       	pop	r28
+    1310:	1f 91       	pop	r17
+    1312:	0f 91       	pop	r16
+    1314:	08 95       	ret
+
+00001316 <_Z10debug_byteh>:
+    1316:	cf 93       	push	r28
+    1318:	c8 2f       	mov	r28, r24
+    131a:	e8 2f       	mov	r30, r24
+    131c:	e2 95       	swap	r30
+    131e:	ef 70       	andi	r30, 0x0F	; 15
+    1320:	f0 e0       	ldi	r31, 0x00	; 0
+    1322:	ee 5d       	subi	r30, 0xDE	; 222
+    1324:	fc 4f       	sbci	r31, 0xFC	; 252
+    1326:	80 81       	ld	r24, Z
+    1328:	0e 94 61 09 	call	0x12c2	; 0x12c2 <_Z10debug_sendc>
+    132c:	cf 70       	andi	r28, 0x0F	; 15
+    132e:	ec 2f       	mov	r30, r28
+    1330:	f0 e0       	ldi	r31, 0x00	; 0
+    1332:	ee 5d       	subi	r30, 0xDE	; 222
+    1334:	fc 4f       	sbci	r31, 0xFC	; 252
+    1336:	80 81       	ld	r24, Z
+    1338:	0e 94 61 09 	call	0x12c2	; 0x12c2 <_Z10debug_sendc>
+    133c:	cf 91       	pop	r28
+    133e:	08 95       	ret
+
+00001340 <_Z19debug_usb_interrupth>:
+
+void debug_usb_interrupt(uint8_t number)
+{
+    1340:	cf 93       	push	r28
+    1342:	c8 2f       	mov	r28, r24
+	debug_send("&I-USB[");
+    1344:	87 e1       	ldi	r24, 0x17	; 23
+    1346:	93 e0       	ldi	r25, 0x03	; 3
+    1348:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+	debug_byte(number);
+    134c:	8c 2f       	mov	r24, r28
+    134e:	0e 94 8b 09 	call	0x1316	; 0x1316 <_Z10debug_byteh>
+	debug_send("];");
+    1352:	8f e1       	ldi	r24, 0x1F	; 31
+    1354:	93 e0       	ldi	r25, 0x03	; 3
+    1356:	0e 94 75 09 	call	0x12ea	; 0x12ea <_Z10debug_sendPKc>
+    135a:	cf 91       	pop	r28
+    135c:	08 95       	ret
+
+0000135e <__tablejump2__>:
+    135e:	ee 0f       	add	r30, r30
+    1360:	ff 1f       	adc	r31, r31
+    1362:	05 90       	lpm	r0, Z+
+    1364:	f4 91       	lpm	r31, Z
+    1366:	e0 2d       	mov	r30, r0
+    1368:	09 94       	ijmp
+
+0000136a <_exit>:
+    136a:	f8 94       	cli
+
+0000136c <__stop_program>:
+    136c:	ff cf       	rjmp	.-2      	; 0x136c <__stop_program>

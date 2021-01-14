@@ -1,0 +1,779 @@
+Archive member included to satisfy reference by file (symbol)
+
+e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                              E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o (exit)
+e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                              AvrUsbCore.o (__tablejump2__)
+e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                              AvrUsbCore.o (__do_copy_data)
+e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                              AvrUsbCore.o (__do_clear_bss)
+e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                              AvrUsbCore.o (__do_global_ctors)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
+ .bss           0x00000000        0x0 E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
+ .text          0x00000000        0x0 SoftwareSpi.o
+ .data          0x00000000        0x0 SoftwareSpi.o
+ .bss           0x00000000        0x0 SoftwareSpi.o
+ .text._Z7sspi_csb
+                0x00000000        0xc SoftwareSpi.o
+ .text          0x00000000        0x0 AvrUsbCore.o
+ .data          0x00000000        0x0 AvrUsbCore.o
+ .bss           0x00000000        0x0 AvrUsbCore.o
+ .text._Z19ClearSetupInterruptv
+                0x00000000        0x8 AvrUsbCore.o
+ .text._Z11SetEndpointc
+                0x00000000        0x6 AvrUsbCore.o
+ .text._Z8SendBytec
+                0x00000000        0x6 AvrUsbCore.o
+ .text._Z9SendByteshPch
+                0x00000000       0x26 AvrUsbCore.o
+ .text._Z7CleanINv
+                0x00000000        0x8 AvrUsbCore.o
+ .text._Z8ClearOUTv
+                0x00000000        0x8 AvrUsbCore.o
+ .bss._ZL7_buffer
+                0x00000000      0x200 AvrUsbCore.o
+ .bss._ZL9_cardType
+                0x00000000        0x1 AvrUsbCore.o
+ .bss._ZL10_SDHC_flag
+                0x00000000        0x1 AvrUsbCore.o
+ .text          0x00000000        0x0 main.o
+ .data          0x00000000        0x0 main.o
+ .bss           0x00000000        0x0 main.o
+ .bss._ZL7_buffer
+                0x00000000      0x200 main.o
+ .bss._ZL9_cardType
+                0x00000000        0x1 main.o
+ .bss._ZL10_SDHC_flag
+                0x00000000        0x1 main.o
+ .bss._ZL14_cdcBreakValue
+                0x00000000        0x2 main.o
+ .data._ZL12_usbLineInfo
+                0x00000000        0x8 main.o
+ .text          0x00000000        0x0 SDCard.o
+ .data          0x00000000        0x0 SDCard.o
+ .bss           0x00000000        0x0 SDCard.o
+ .text._Z8sd_statev
+                0x00000000        0x6 SDCard.o
+ .text._Z18SD_readSingleBlockm
+                0x00000000       0x4e SDCard.o
+ .bss._ZL7_buffer
+                0x00000000      0x200 SDCard.o
+ .bss._ZL14_cdcBreakValue
+                0x00000000        0x2 SDCard.o
+ .data._ZL12_usbLineInfo
+                0x00000000        0x8 SDCard.o
+ .text          0x00000000        0x0 SSpiDebug.o
+ .data          0x00000000        0x0 SSpiDebug.o
+ .bss           0x00000000        0x0 SSpiDebug.o
+ .text._Z11debug_bytesPcj
+                0x00000000       0x3a SSpiDebug.o
+ .text._Z15debug_usb_setuphhjj
+                0x00000000       0xb0 SSpiDebug.o
+ .text          0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .data          0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .bss           0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
+LOAD SoftwareSpi.o
+LOAD AvrUsbCore.o
+LOAD main.o
+LOAD SDCard.o
+LOAD SSpiDebug.o
+START GROUP
+LOAD e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+END GROUP
+LOAD e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+START GROUP
+LOAD e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+LOAD e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a
+LOAD E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5\libatmega32u4.a
+END GROUP
+                0x00000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                0x00800060                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x136e
+ *(.vectors)
+ .vectors       0x00000000       0xac E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table._Z12SCSI_Executev
+                0x000000ac       0x56 AvrUsbCore.o
+ .progmem.gcc_sw_table.__vector_11
+                0x00000102       0x14 AvrUsbCore.o
+                0x00000116                . = ALIGN (0x2)
+                0x00000116                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000116        0x0 linker stubs
+ *(.trampolines*)
+                0x00000116                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x00000116                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000116                __ctors_start = .
+ *(.ctors)
+ .ctors         0x00000116        0x2 AvrUsbCore.o
+ .ctors         0x00000118        0x2 main.o
+ .ctors         0x0000011a        0x2 SDCard.o
+                0x0000011c                __ctors_end = .
+                0x0000011c                __dtors_start = .
+ *(.dtors)
+                0x0000011c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000011c        0x0 E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
+                0x0000011c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000011c        0xc E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000128       0x16 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00000128                __do_copy_data
+ .init4         0x0000013e       0x10 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000013e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x0000014e       0x16 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                0x0000014e                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000164        0x8 E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
+ *(.init9)
+ *(.text)
+ .text          0x0000016c        0x4 E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
+                0x0000016c                __vector_38
+                0x0000016c                __vector_22
+                0x0000016c                __vector_28
+                0x0000016c                __vector_1
+                0x0000016c                __vector_32
+                0x0000016c                __vector_34
+                0x0000016c                __vector_24
+                0x0000016c                __vector_12
+                0x0000016c                __bad_interrupt
+                0x0000016c                __vector_6
+                0x0000016c                __vector_31
+                0x0000016c                __vector_35
+                0x0000016c                __vector_39
+                0x0000016c                __vector_3
+                0x0000016c                __vector_23
+                0x0000016c                __vector_30
+                0x0000016c                __vector_25
+                0x0000016c                __vector_13
+                0x0000016c                __vector_17
+                0x0000016c                __vector_19
+                0x0000016c                __vector_7
+                0x0000016c                __vector_41
+                0x0000016c                __vector_27
+                0x0000016c                __vector_5
+                0x0000016c                __vector_33
+                0x0000016c                __vector_37
+                0x0000016c                __vector_4
+                0x0000016c                __vector_9
+                0x0000016c                __vector_2
+                0x0000016c                __vector_21
+                0x0000016c                __vector_15
+                0x0000016c                __vector_36
+                0x0000016c                __vector_29
+                0x0000016c                __vector_40
+                0x0000016c                __vector_8
+                0x0000016c                __vector_26
+                0x0000016c                __vector_14
+                0x0000016c                __vector_16
+                0x0000016c                __vector_18
+                0x0000016c                __vector_20
+                0x0000016c                __vector_42
+                0x00000170                . = ALIGN (0x2)
+ *(.text.*)
+ .text._Z9sspi_initv
+                0x00000170       0x10 SoftwareSpi.o
+                0x00000170                _Z9sspi_initv
+ .text._Z9sspi_sendh
+                0x00000180       0x1a SoftwareSpi.o
+                0x00000180                _Z9sspi_sendh
+ .text._Z9sspi_recvv
+                0x0000019a       0x18 SoftwareSpi.o
+                0x0000019a                _Z9sspi_recvv
+ .text._Z13usb_core_initv
+                0x000001b2       0x5c AvrUsbCore.o
+                0x000001b2                _Z13usb_core_initv
+ .text._Z22ReceivedSetupInterruptv
+                0x0000020e        0xc AvrUsbCore.o
+                0x0000020e                _Z22ReceivedSetupInterruptv
+ .text._Z18InitializeEndpointccc
+                0x0000021a       0x1e AvrUsbCore.o
+                0x0000021a                _Z18InitializeEndpointccc
+ .text.__vector_10
+                0x00000238       0x64 AvrUsbCore.o
+                0x00000238                __vector_10
+ .text._Z8ReadDataPVcc
+                0x0000029c       0x1c AvrUsbCore.o
+                0x0000029c                _Z8ReadDataPVcc
+ .text._Z11WaitInTokenv
+                0x000002b8        0xc AvrUsbCore.o
+                0x000002b8                _Z11WaitInTokenv
+ .text._Z12WaitOutTokenv
+                0x000002c4        0xc AvrUsbCore.o
+                0x000002c4                _Z12WaitOutTokenv
+ .text._Z9WaitINOUTv
+                0x000002d0       0x1a AvrUsbCore.o
+                0x000002d0                _Z9WaitINOUTv
+ .text._Z19InitControlTransfers
+                0x000002ea       0x16 AvrUsbCore.o
+                0x000002ea                _Z19InitControlTransfers
+ .text._Z19SendControlTransferc
+                0x00000300       0x56 AvrUsbCore.o
+                0x00000300                _Z19SendControlTransferc
+ .text._Z22USBSendControlTransfercPKcs
+                0x00000356       0x48 AvrUsbCore.o
+                0x00000356                _Z22USBSendControlTransfercPKcs
+ .text._Z14SendDescriptorP8USBSetup
+                0x0000039e       0xe8 AvrUsbCore.o
+                0x0000039e                _Z14SendDescriptorP8USBSetup
+ .text._Z22USBRecvControlTransferPcs
+                0x00000486       0x80 AvrUsbCore.o
+                0x00000486                _Z22USBRecvControlTransferPcs
+ .text._Z19ClassControlRequestP8USBSetup
+                0x00000506      0x184 AvrUsbCore.o
+                0x00000506                _Z19ClassControlRequestP8USBSetup
+ .text._Z7SendUsbcPKcs
+                0x0000068a       0x90 AvrUsbCore.o
+                0x0000068a                _Z7SendUsbcPKcs
+ .text._Z12SCSI_Executev
+                0x0000071a      0x5be AvrUsbCore.o
+                0x0000071a                _Z12SCSI_Executev
+ .text.__vector_11
+                0x00000cd8      0x1d6 AvrUsbCore.o
+                0x00000cd8                __vector_11
+ .text._Z13CDC_Send_DataPKcs
+                0x00000eae       0x16 AvrUsbCore.o
+                0x00000eae                _Z13CDC_Send_DataPKcs
+ .text._Z13CDC_Send_Byteh
+                0x00000ec4       0x72 AvrUsbCore.o
+                0x00000ec4                _Z13CDC_Send_Byteh
+ .text._GLOBAL__sub_I___vector_10
+                0x00000f36        0x8 AvrUsbCore.o
+ .text.main     0x00000f3e       0x46 main.o
+                0x00000f3e                main
+ .text._GLOBAL__sub_I_main
+                0x00000f84        0x8 main.o
+ .text._Z14SD_sendCommandhmb
+                0x00000f8c      0x114 SDCard.o
+                0x00000f8c                _Z14SD_sendCommandhmb
+ .text._Z7SD_initv
+                0x000010a0      0x20a SDCard.o
+                0x000010a0                _Z7SD_initv
+ .text._GLOBAL__sub_I__Z7SD_initv
+                0x000012aa        0x8 SDCard.o
+ .text._Z17debug_master_initv
+                0x000012b2       0x10 SSpiDebug.o
+                0x000012b2                _Z17debug_master_initv
+ .text._Z10debug_sendc
+                0x000012c2       0x28 SSpiDebug.o
+                0x000012c2                _Z10debug_sendc
+ .text._Z10debug_sendPKc
+                0x000012ea       0x2c SSpiDebug.o
+                0x000012ea                _Z10debug_sendPKc
+ .text._Z10debug_byteh
+                0x00001316       0x2a SSpiDebug.o
+                0x00001316                _Z10debug_byteh
+ .text._Z19debug_usb_interrupth
+                0x00001340       0x1e SSpiDebug.o
+                0x00001340                _Z19debug_usb_interrupth
+ .text.libgcc   0x0000135e        0xc e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x0000135e                __tablejump2__
+                0x0000136a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000136a        0x0 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x0000136a                _exit
+                0x0000136a                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000136a        0x4 e:/atmelstudio7/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000136e                _etext = .
+
+.data           0x00800100      0x234 load address 0x0000136e
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data._ZL10mode_sense
+                0x00800100        0x4 AvrUsbCore.o
+ .data._ZL8capacity
+                0x00800104        0x8 AvrUsbCore.o
+ .data._ZL10sense_data
+                0x0080010c       0x12 AvrUsbCore.o
+ .data._ZL12_usbLineInfo
+                0x0080011e        0x8 AvrUsbCore.o
+ .data._ZL13_sdcard_state
+                0x00800126        0x1 SDCard.o
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ .rodata        0x00800127       0x10 AvrUsbCore.o
+ *(.rodata*)
+ .rodata.str1.1
+                0x00800137       0x6a AvrUsbCore.o
+                                 0x6d (size before relaxing)
+ .rodata._ZL19usb_format_capacity
+                0x008001a1        0xc AvrUsbCore.o
+ .rodata._ZL8inq_resp
+                0x008001ad       0x24 AvrUsbCore.o
+ .rodata._ZL14_initEndpoints
+                0x008001d1        0x7 AvrUsbCore.o
+ .rodata._ZL11STRINGS_SET
+                0x008001d8       0x40 AvrUsbCore.o
+ .rodata._ZL15STRING_LANGUAGE
+                0x00800218        0x4 AvrUsbCore.o
+ .rodata._ZL16DeviceDescriptor
+                0x0080021c       0x12 AvrUsbCore.o
+ .rodata._ZL23ConfigurationDescriptor
+                0x0080022e        0x9 AvrUsbCore.o
+ .rodata._ZL27ConfigurationDescriptorPlus
+                0x00800237       0x61 AvrUsbCore.o
+ .rodata.str1.1
+                0x00800298       0x13 main.o
+                                 0x15 (size before relaxing)
+ .rodata.str1.1
+                0x008002ab       0x1b SDCard.o
+                                 0x1f (size before relaxing)
+ .rodata.str1.1
+                0x008002c6       0x5c SSpiDebug.o
+ .rodata._ZZ10debug_bytehE4sign
+                0x00800322       0x11 SSpiDebug.o
+ *(.gnu.linkonce.r*)
+                0x00800334                . = ALIGN (0x2)
+ *fill*         0x00800333        0x1 
+                0x00800334                _edata = .
+                0x00800334                PROVIDE (__data_end, .)
+
+.bss            0x00800334       0x15
+                0x00800334                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss._ZL5_cend
+                0x00800334        0x2 AvrUsbCore.o
+ .bss._ZL6_cmark
+                0x00800336        0x2 AvrUsbCore.o
+ .bss._ZL14_cdcBreakValue
+                0x00800338        0x2 AvrUsbCore.o
+ .bss._ZL11wdtcsr_save
+                0x0080033a        0x1 AvrUsbCore.o
+ .bss._ZL9USB_STATE
+                0x0080033b        0x4 AvrUsbCore.o
+ .bss._ZL9USB_STATE
+                0x0080033f        0x4 main.o
+ .bss._ZL9_cardType
+                0x00800343        0x1 SDCard.o
+ .bss._ZL10_SDHC_flag
+                0x00800344        0x1 SDCard.o
+ .bss._ZL9USB_STATE
+                0x00800345        0x4 SDCard.o
+ *(COMMON)
+                0x00800349                PROVIDE (__bss_end, .)
+                0x0000136e                __data_load_start = LOADADDR (.data)
+                0x000015a2                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800349        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x00800349                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 SoftwareSpi.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 AvrUsbCore.o
+ .comment       0x00000030       0x31 main.o
+ .comment       0x00000030       0x31 SDCard.o
+ .comment       0x00000030       0x31 SSpiDebug.o
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1d8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x38 SoftwareSpi.o
+ .debug_aranges
+                0x00000038       0xe8 AvrUsbCore.o
+ .debug_aranges
+                0x00000120       0x28 main.o
+ .debug_aranges
+                0x00000148       0x40 SDCard.o
+ .debug_aranges
+                0x00000188       0x50 SSpiDebug.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x4fb8
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x9f4 E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
+ .debug_info    0x000009f4      0x125 SoftwareSpi.o
+ .debug_info    0x00000b19     0x2229 AvrUsbCore.o
+ .debug_info    0x00002d42      0xc6a main.o
+ .debug_info    0x000039ac     0x119e SDCard.o
+ .debug_info    0x00004b4a      0x46e SSpiDebug.o
+
+.debug_abbrev   0x00000000     0x1516
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x96a E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
+ .debug_abbrev  0x0000096a       0xb9 SoftwareSpi.o
+ .debug_abbrev  0x00000a23      0x480 AvrUsbCore.o
+ .debug_abbrev  0x00000ea3      0x24b main.o
+ .debug_abbrev  0x000010ee      0x2f1 SDCard.o
+ .debug_abbrev  0x000013df      0x137 SSpiDebug.o
+
+.debug_line     0x00000000     0x1720
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x199 E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
+ .debug_line    0x00000199      0x136 SoftwareSpi.o
+ .debug_line    0x000002cf      0xd01 AvrUsbCore.o
+ .debug_line    0x00000fd0      0x12f main.o
+ .debug_line    0x000010ff      0x3da SDCard.o
+ .debug_line    0x000014d9      0x247 SSpiDebug.o
+
+.debug_frame    0x00000000      0x578
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x54 SoftwareSpi.o
+ .debug_frame   0x00000054      0x358 AvrUsbCore.o
+ .debug_frame   0x000003ac       0x34 main.o
+ .debug_frame   0x000003e0       0xb4 SDCard.o
+ .debug_frame   0x00000494       0xe4 SSpiDebug.o
+
+.debug_str      0x00000000     0x1155
+ *(.debug_str)
+ .debug_str     0x00000000      0x371 E:/AtmelStudio7/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
+ .debug_str     0x00000371      0x1ba SoftwareSpi.o
+                                0x1f8 (size before relaxing)
+ .debug_str     0x0000052b      0xadb AvrUsbCore.o
+                                0xe20 (size before relaxing)
+ .debug_str     0x00001006       0x53 main.o
+                                0x888 (size before relaxing)
+ .debug_str     0x00001059       0x87 SDCard.o
+                                0x947 (size before relaxing)
+ .debug_str     0x000010e0       0x75 SSpiDebug.o
+                                0x2c5 (size before relaxing)
+
+.debug_loc      0x00000000     0x1f70
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xbf SoftwareSpi.o
+ .debug_loc     0x000000bf     0x13d2 AvrUsbCore.o
+ .debug_loc     0x00001491       0x47 main.o
+ .debug_loc     0x000014d8      0x6c1 SDCard.o
+ .debug_loc     0x00001b99      0x3d7 SSpiDebug.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x258
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x28 SoftwareSpi.o
+ .debug_ranges  0x00000028      0x1a8 AvrUsbCore.o
+ .debug_ranges  0x000001d0       0x18 main.o
+ .debug_ranges  0x000001e8       0x30 SDCard.o
+ .debug_ranges  0x00000218       0x40 SSpiDebug.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(UsbMsc.elf elf32-avr)
+LOAD linker stubs
