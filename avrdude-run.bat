@@ -1,0 +1,1 @@
+avrdude -Cavrdude.conf -v -patmega32u4 -b57600  -PCOM15 -D -cavr109 -Uflash:w:D:\UsbMsc.hex:i

@@ -443,7 +443,7 @@ void SCSI_Execute(){
 
 			///CDC_Send_Data("Read", 4);
 
-			response = SD_sendCommand(READ_SINGLE_BLOCK, i, false); //read a Block command
+			response = sd_spi_driver_sendCommand(READ_SINGLE_BLOCK, i, false); //read a Block command
 			
 			if(response != 0x00) return ; //check for SD status: 0x00 - OK (No flags set)
 			///CDC_Send_Data("Init", 4);
@@ -507,7 +507,7 @@ void SCSI_Execute(){
 		unsigned char response;
 		unsigned int t, retry=0;
 
-		response = SD_sendCommand(WRITE_SINGLE_BLOCK, i, false); //write a Block command
+		response = sd_spi_driver_sendCommand(WRITE_SINGLE_BLOCK, i, false); //write a Block command
 		
 		if(response != 0x00){
 		debug_send("@304");

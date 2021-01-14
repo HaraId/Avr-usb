@@ -6,7 +6,7 @@
  */ 
 
 #include <avr/io.h>
-#include "SDCard.h"
+#include "AvrUsbCore.h"
 
 extern char sd_buff[512];
 
@@ -22,7 +22,7 @@ int main(void)
 
 	usb_core_init();
 
-	status = SD_init();
+	status = sd_spi_driver_init();
 	debug_send("SDCARDS:");
 	debug_byte(status);
 	debug_byte(status);
@@ -50,6 +50,8 @@ int main(void)
     /* Replace with your application code */
     while (1) 
     {
+		_delay_ms(1000);
+		CDC_Send_Data("HEllo World", 12);
     }
 }
 
